@@ -1,0 +1,17 @@
+body{
+    margin:0px;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+body > header{
+    min-height:50px;
+    margin-bottom:auto;
+}
+body > main{
+   
+}
+body > footer{
+    min-height:50px;
+    margin-top:auto;
+}

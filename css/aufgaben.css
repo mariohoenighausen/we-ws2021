@@ -1,0 +1,60 @@
+/* Tab Section start */
+.tab-menu{
+    display:flex;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color:#f0f0f0;
+}
+@media only screen and (max-width: 600px) {
+  
+   .tab-menu{
+      flex-direction: row;
+      width:fit-content;
+   }
+   /* Change the tab menu buttons size or orient them in a 3x4 grid for mobile end devices */
+}
+.tab-menu button{
+    padding:14px 16px;
+    outline:none;
+    cursor:pointer;
+    border:1px solid #ccc; 
+}
+tab-menu button.active{
+    background-color:black;
+}
+tab-menu button:hover{
+    background-color:#ddd;
+}
+.tab-content{
+    display:none;
+    border:1px solid #ccc;
+    border-top:none; 
+    padding-left:10px;
+ }
+
+ .sticky{
+    position: fixed;
+    top: 0;
+    width:100%;
+ }
+ /* Quelle: https://www.w3schools.com/howto/howto_js_tabs.asp */
+ /* Tab Section end */
+ .task-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+ }
+ .code-vs-render{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+ }
+ .code-vs-render pre{
+    word-wrap:break-word;
+    width:50%;
+    overflow:scroll;
+ }
+ .code-vs-render iframe{
+    width:50%;
+ }

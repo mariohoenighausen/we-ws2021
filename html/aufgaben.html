@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Mario Hönighausen</title>
@@ -9,25 +10,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- meta tags end-->
 		<!-- links start-->
-		<link rel="stylesheet" href="css/main.css">
-
+		<link rel="stylesheet" href="../css/aufgaben.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/menu.css">
 		<!-- links end-->
 	</head>
 	<body>
 		<!-- Header section start -->
-		<header>
+		<header style="margin-bottom:100px;">
 			<!--Hero section start-->
-			<section> 
-
+			<section style="display:flex;justify-content: center;"> 
+                <h1>Mario Hönighausen</h1>
 			</section>
 			<!--Hero section end-->
 			<!--Nav section start-->
-			<nav>
+			<nav class="top-nav">
 				<ul>
 					<li><a href="https://www2.inf.h-brs.de/~mhoeni2s/index.html">Home</a></li>
-					<li><a href="html/about.html">About</a></li>
-					<li><a href="html/aufgaben.html">Aufgaben</a></li>
-					<li><a href="html/contact.html">Contact</a></li>
+					<li><a href="../html/about.html">About</a></li>
+					<li><a href="../html/aufgaben.html">Aufgaben</a></li>
+					<li><a href="../html/contact.html">Contact</a></li>
 				</ul>
 			</nav>
 			<!--Nav section start-->
@@ -35,13 +37,307 @@
 		<!-- Header section end -->
 		<!-- Main section start -->
 		<main>
-            <p>Aufgaben funktioniert!</p>
+            <!-- main header section start -->
+            <header style="display:flex; justify-content: center;"><h2>Aufgaben</h2></header>
+            <!-- main header section end -->
+           
+            <!-- Tab menu end -->
+           <!-- tab section start -->
+            <section  class="tab-section">
+                 <!-- Tab menu start -->
+                
+                 <div id="tabBar"class="tab-menu">
+                    <button onclick="openAufgabe('aufgabe-1')" class="tablinks ">1</button>
+                    <button onclick="openAufgabe('aufgabe-2')" class="tablinks ">2</button>
+                    <button onclick="openAufgabe('aufgabe-3')" class="tablinks ">3</button>
+
+                    <button onclick="openAufgabe('aufgabe-4')" class="tablinks ">4</button>
+                    <button onclick="openAufgabe('aufgabe-5')" class="tablinks ">5</button>
+                    <button onclick="openAufgabe('aufgabe-6')" class="tablinks ">6</button>
+
+                    <button onclick="openAufgabe('aufgabe-7')" class="tablinks ">7</button>
+                    <button onclick="openAufgabe('aufgabe-8')" class="tablinks ">8</button>
+                    <button onclick="openAufgabe('aufgabe-9')" class="tablinks ">9</button>
+                    
+                    <button onclick="openAufgabe('aufgabe-10')" class="tablinks ">10</button>
+                    <button onclick="openAufgabe('aufgabe-11')" class="tablinks ">11</button>
+                    <button onclick="openAufgabe('aufgabe-12')" class="tablinks ">12</button>
+                </div>
+                <!-- Tab content start -->
+                <div id="aufgabe-1" class="tab-content">
+                    <h1>1.1. Fachliche Argumentation über Erfolgsprinzipien des WWW</h1>
+                    <div class="task-container">
+                        
+                        <h2>Mit welchen fachlichen Argumenten wurde das WWW-Proposal von TBL abgelehnt?</h2>
+                        <span>Es wurde als zu "vage" bzw. zu ungenau in Bezug auf die Evolvierbarkeit des Webs
+                             und den Umgang mit insbesondere "Broken Links" und referentieller Integrität gesehen
+                              und entsprach nicht dem damaligen akademischen Konsens bzw. wurde als degressive 
+                              Entwicklung verkannt.
+                        </span>
+                    </div>
+                    <div class="task-container">
+                        <h2>Was sind die fachlichen Argumente, warum das WWW dennoch ein Erfolg wurde?</h2>
+                        <span>
+                            Durch die Orthogonalität der Entwicklungsmöglichkeiten des Webs (zu Beginnn Interaktion == http
+                            , Representation == HTML und Identification == URI), sowie der nicht nötigen mathematischen Rigorosität
+                             am Beispiel der Möglichkeit von broken Links, die also kein größeres Verständnis von referentieller Integrität
+                              zum rudimentären Erstellen einer Webseite nötig machten.
+                        </span>
+                    </div>
+                    <div class="task-container">
+                        <h2>Was wäre der Preis für die garantierte Verhinderung von “broken links”?</h2>
+                        <span>Die eingeschränkte, nicht orthogonale, zentralisierte Entwicklung und das Verhalten des Webs und seiner Technologien wären der Preis gewesen.
+                            Es müsste ebenso referentielle Integrietät garantiert werden.</span>
+                    </div>
+                    <h1>1.2 HTTP</h1>
+                    <div class="task-container">
+                        <h2>Sie bekommen im Browser den HTTP Status Code 200. Was bedeutet das?</h2>
+                        <span>Bei erfolgreichen http-Anfragen, wird der Code 200 zurückgegeben, welcher ein „OK“ symbolisiert.
+                            Die genaue Bedeutung hängt aber vom jeweiligen http-Verb ab.
+                        </span>
+                    </div>
+                    <div class="task-container">
+                        <h2>Sie bekommen im Browser den HTTP Status Code 301. Was hat das zu bedeuten?</h2>
+                        <span>Die „Moved Permanently“ Antwort, beschreibt bei GET oder HEAD Anfragen, dass
+                             eine Ressource (HTML oder andere) auf eine andere URL verschoben wurde.
+                        </span>
+                    </div>
+                    <div class="task-container">
+                        <h2>Sie bekommen im Browser den HTTP Status Code 400. Was hat das zu bedeuten? Was können Sie dagegen tun?</h2>
+                        <span>Die „Bad Request“ Antwort beschreibt, dass der Server nicht antworten (die Ressource bzw. der Pfad angegebene Pfad zur Ressource existiert gar nicht) oder das durch Clientseitige Fehler die Anfrage nicht bearbeiten werden kann.
+                            Die Anfrage sollte, vom Client so verändert werden, dass sie korrekt formuliert ist.
+                            Browser Cache leeren
+                        </span>
+                    </div>
+                    <div class="task-container">
+                        <h2>Sie bekommen im Browser den HTTP Status Code 403. Was hat das zu bedeuten? Was können Sie dagegen tun?</h2>
+                        <span>De „Forbidden“ Antwort beschreibt, dass eine Anfrage vom Server erhalten und verstanden, aber nicht autorisiert wurde,
+                             also man nicht die nötigen Rechte besitzt, um auf die angefragte Ressource zugreifen zu dürfen.
+                            Durch das Wechseln der Authentifikationsrolle (kein wiederholtes Authentifizieren mit selben Privilegien,
+                             sondern mit anderen) oder das Erhalten von weiteren bzw. das Ändern der benötigten Rechte kann der Zugriff ermöglicht werden.
+                        </span>
+                    </div>
+                    <div class="task-container">
+                        <h2>In einer Webanwendung benötigen Sie eine OPTIONS-Anfrage, 
+                            die die Optionen des Servers vor dem eigentlichen Zugriff erfragen soll.
+                             Aus Performanzgründen soll die Abfrage jedoch cacheable sein.
+                             Wie könnten Sie dafür eine Lösung angehen?</h2>
+                        <span>Durch das Setzen von „Cache-Control“ im Header einer http-Request/Antwort.</span>
+                    </div>
+                    <h1>1.3 HTML-Literatur lesen und Fragen</h1>
+                    <div class="task-container">
+                        <h2>Was ist HTML?</h2>
+                        <span>HTML ist die Abkürzung für Hypertext Markup Language.
+                            Es beschreibt eine unstrukturierte Skriptsprache, die auf tags (Markern) basiert und zur Gestaltung des Aufbaus einer Webseite genutzt wird.
+                        </span>
+                    </div>
+                    <div class="task-container">
+                        <h2>Wie kann man eine geschachtelte geordnete Liste der Schachtelungstiefe 3 erzeugen?</h2>
+                        <div class="code-vs-render">
+                            <pre >
+                                <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;ol&gt;
+        &lt;li&gt;1&lt;/li&gt;
+        &lt;ol&gt;
+            &lt;li&gt;2&lt;/li&gt;
+            &lt;ol&gt;&lt;li&gt;3&lt;/li&gt;&lt;/ol&gt;
+        &lt;/ol&gt;
+    &lt;/ol&gt;
+&lt;/html&gt;           
+                                </code>
+                            </pre>
+                        
+                            <iframe src="../html/aufgaben/aufgabe1/aufgabe1_3_2.html"></iframe>
+                        </div>
+                    </div>
+                    <div class="task-container">
+                        <h2>Wie ist eine HTML-Tabelle aufgebaut?</h2>
+                        <span>Eine HTML-Tabelle besteht aus den Tags <code>&lt;table&gt;</table></code> (definiert die Nutzung eines Tables),
+                             <tr> (definiert die Tabellen Zeile), <code>&lt;th&gt;</code> (definiert Kopfspalten) und <code>&lt;td&gt;</code>
+                                 (definiert table data bzw. Spalten und Spaltenwerte).
+                        </span>
+                    </div>
+                    <div class="task-container">
+                        <h2>Welche Konventionen sollte man bei Pfaden und Dateinamen beachten?</h2>
+                        <span>Wo es möglich ist, sollten relative Dateipfade verwendet werden, damit man sichergeht,
+                             dass das Programm nicht nur auf der lokalen Entwicklungsmaschine durch das Benutzen 
+                             von absoluten Pfaden, funktioniert.
+                            Des Weiteren sollten Dateinamen tendenziell klein geschriebene werden,
+                             da man dadurch Probleme mit Groß- und Kleinschreibungssensitiven Systemen vermeidet.
+                        </span>
+                    </div>
+                    <div class="task-container">
+                        <h2>Wie baut man in HTML ein Menü?</h2>
+                        <span>Menüs werden durch das Verwenden des Navigations-Tags (<code>&lt;nav&gt;</code>),
+                            von ungeordneten Listen (<code>&lt;ul&gt;</code>), sowie Anchor Tags (<code>&lt;a href=““&gt;&lt;/a&gt;</code>) realisiert.
+                            Href kann auf eine id, oder http Adressen referenzieren.
+                        </span>
+                        <div class="code-vs-render">
+                            <pre>
+                                <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/body&gt;
+&lt;/html&gt;                  
+                                </code>
+                            </pre>
+                        
+                            <iframe src="../html/aufgaben/aufgabe1/aufgabe1_3_5.html"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="task-container">
+                        <h2>Welche Attribute sollte man bei Bildern wie verwenden?</h2>
+                        <span>Bei Bildern (<code>&lt;img&gt;</code>) sollte man die Attribute src, zum Setzen einer Quelle, alt, zum Setzen eines bei nicht Darstellbarkeit des Bildes alternativ darzustellenden Textes, sowie width zum Setzen der Breite und height zum Sezten der Höhe eines Bildes, mindestens verwenden.
+                            <code>&lt;img src="" alt="Alternativer Text" height="" width=""&gt;</code>
+                            </span>
+                    </div>
+                    
+                    <div class="code-vs-render">
+                        <pre >
+                            <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;&Uuml;1.2&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;&Uuml;bung 1.2: Inventors of the Web&lt;/h1&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;mark&gt;&lt;u&gt;&lt;strong&gt;Tim Berners-Lee:&lt;/strong&gt;&lt;/u&gt;&lt;/mark&gt; WWW, HTTP, HTML, URI&lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;Hakom Lie and Bert Bos:&lt;/strong&gt; CSS&lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;Brendan Eich:&lt;/strong&gt; JavaScript&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/header&gt;
+        &lt;hr&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Inventors of the WWW&lt;/h2&gt;
+            &lt;table border=&quot;10&quot;&gt;
+                &lt;tr&gt;
+                    &lt;th colspan=4&gt;
+                        Inventors of the WWW
+                    &lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;WWW&lt;/th&gt; 
+                    &lt;th&gt;HTML&lt;/th&gt; 
+                    &lt;th&gt;CSS&lt;/th&gt; 
+                    &lt;th&gt;JavaScript&lt;/th&gt; 
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;mark&gt;Time Berners-Lee&lt;/mark&gt;&lt;/td&gt;
+                        &lt;td&gt;&lt;mark&gt;Time Berners-Lee&lt;/mark&gt;&lt;/td&gt;
+                        &lt;td&gt;Hakom Lie and Bert Bos&lt;/td&gt;
+                        &lt;td&gt;Hrendan Eich&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/section&gt;
+        &lt;hr&gt;
+        &lt;section&gt;
+                &lt;h3&gt;Inventors of the WWW &lt;/h3&gt;
+            
+                &lt;table&gt;
+                    &lt;tr&gt;&lt;th colspan=4&gt;&lt;hr&gt;&lt;/th&gt;&lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;HTML&lt;/th&gt;
+                        &lt;td&gt;|&lt;/td&gt;
+                        &lt;th&gt;JavaScript&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;img src=&quot;https://kaul.inf.h-brs.de/we/assets/img/tbl.jpg&quot; alt=&quot;Tim Berners-Lee&quot;&gt;&lt;/td&gt;
+                        &lt;td&gt;|&lt;/td&gt;
+                        &lt;td&gt;&lt;img src=&quot;https://kaul.inf.h-brs.de/we/assets/img/eich.jpg&quot; alt=&quot;Brendan Eich&quot;&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;mark&gt;Tim Berners-Lee&lt;/mark&gt;&lt;/td&gt;
+                        &lt;td&gt;|&lt;/td&gt;
+                        &lt;td&gt;Brendan Eich&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+        &lt;/section&gt;
+        &lt;hr&gt;
+    &lt;/body&gt;
+&lt;/html&gt; 
+                            </code>
+                        </pre>
+                    
+                        <iframe src="../html/aufgaben/aufgabe1/aufgabe1_4.html"></iframe>
+                    </div>
+                </div>
+                <div id="aufgabe-2" class="tab-content">
+                   <!-- <embed style="width:100%;height:95%" src="../html/aufgaben/aufgabe1/aufgabe1.html"></embed> -->
+                </div>
+                <div id="aufgabe-3" class="tab-content">
+                  
+                </div>
+                <div id="aufgabe-4" class="tab-content">
+
+                </div>
+                <div id="aufgabe-5" class="tab-content">
+
+                </div>
+                <div id="aufgabe-6" class="tab-content">
+
+                </div>
+                <div id="aufgabe-7" class="tab-content">
+
+                </div>
+                <div id="aufgabe-8" class="tab-content">
+
+                </div>
+                <div id="aufgabe-9" class="tab-content">
+
+                </div>
+                <div id="aufgabe-10" class="tab-content">
+
+                </div>
+                <div id="aufgabe-11" class="tab-content">
+
+                </div>
+                <div id="aufgabe-12" class="tab-content">
+
+                </div>
+                  <!-- Tab content end -->
+            </section>
+            <!-- tab section start -->
 		</main>
 		<!-- Main section end -->
 		<!-- Footer section start -->
-		<footer>
-
+		<footer style="width:100%" >
+            <nav class="bottom-nav">
+				<ul>
+					<li><a href="https://www2.inf.h-brs.de/~mhoeni2s/index.html">Home</a></li>
+					<li><a href="../html/about.html">About</a></li>
+					<li><a href="../html/aufgaben.html">Aufgaben</a></li>
+					<li><a href="../html/contact.html">Contact</a></li>
+				</ul>
+			</nav>
 		</footer>
 		<!-- Footer section end -->
+        <!-- Scripts section start-->
+        <script src="../js/aufgaben.js"></script>
+        <!-- Scripts section end-->
 	</body>
 </html>
+
+<!-- create a task-container with question heading, text answer and code vs render section -->
+<!-- div.task-container>h2+span+div.code-vs-render>pre>code^iframe -->
+
+<!-- create a task-container with question heading and code vs render section -->
+<!-- div.task-container>h2+div.code-vs-render>pre>code^iframe -->
+
+<!-- create a task container with question heading and text  -->
+<!-- div.task-container>h2+span -->

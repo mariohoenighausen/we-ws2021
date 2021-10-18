@@ -278,7 +278,416 @@
                     </div>
                 </div>
                 <div id="aufgabe-2" class="tab-content">
-                   <!-- <embed style="width:100%;height:95%" src="../html/aufgaben/aufgabe1/aufgabe1.html"></embed> -->
+                    <h1>2.1. CSS Selektoren und CSS Farben</h1>
+                    <div class="task-container">
+                        
+                        <h2>Berechnen Sie die Spezifität folgender CSS-Selektoren:</h2>
+                        <span>    div div div:focus .inner
+                            div div div:focus .inner = 023 
+                            h1 + div.main = 012
+                            div a:link[href*='h-brs'] = 022
+                            nav > a:hover::before = 013
+                            ul#primary-nav li.active = 112
+                        </span>
+                    </div>
+                    <div class="task-container">
+                        
+                        <h2>Rechnen Sie folgende RGB-Werte in HSL-Werte um:</h2>
+                        <span>#ffffff => 255 255 255 RGB => 0° 0.0% 100% HSL
+                            #000 = > 0 0 0 RGB => 0° 0.0% 0.0%
+                            #ab0978 => 171 9 120 RGB => 319° 90% 35.3% HSL
+                            rgb(127,255,33) => #7FFF21 HEX =>95° 100.0% 56% HSL
+                            rgba(255,127,33,0.8) => #ff7e20 HEX => rgb(255 126 32) =>25° 100.0% 56%  0.8 HSL
+                        </span>
+                    </div>
+                    <h1>2.2. CSS Positionierung</h1>
+                    <div class="task-container">
+                        <h2>Schauen Sie sich folgendes <a target="_blank" href="https://www.youtube.com/watch?v=PE3POxjDspo" rel="noopener">Video</a> an und bauen Sie das dynamische Verhalten exakt nach (nur mit HTML und CSS, ohne JavaScript):</h2>
+                            <span></span>
+                            <div class="code-vs-render">
+                                <pre><code>
+                                    &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Lerneinheit 2 2.2 CSS Positionierung&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body style=&quot;margin:10px;&quot;&gt;
+        &lt;header style=&quot;opacity:0.9;padding:10px;position:sticky; margin:10px; top:0;border-style:solid;border-width:thin;background-color:white;&quot;&gt;
+            &lt;h1 style=&quot;opacity:1;&quot;&gt;Erste &Uuml;berschrift&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;article style=&quot;margin:10px;&quot;&gt; 
+            &lt;section&gt;
+                &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+    et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+    erat, sed diam voluptua. At vero eos et accusam et justo duo 
+    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+    sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+    sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+    magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+        et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+        erat, sed diam voluptua. At vero eos et accusam et justo duo 
+        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+        sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+        &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+        sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+        magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+            et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo 
+            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+            sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+            &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+            magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat, sed diam voluptua. At vero eos et accusam et justo duo 
+                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+                &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                    erat, sed diam voluptua. At vero eos et accusam et justo duo 
+                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                    sanctus est Lorem ipsum dolor sit amet.
+                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                    sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+            &lt;/section&gt;
+            
+        &lt;/article&gt;
+        &lt;header style=&quot;opacity:0.9;padding:10px; position:sticky;margin:10px; top:0; border-style:solid;border-width:thin;background-color:white;&quot;&gt;
+            &lt;h1 style=&quot;opacity:1;&quot; &gt;Zweite &Uuml;berschrift&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;article style=&quot;margin:10px;&quot;&gt;
+           
+            &lt;section&gt;
+                &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+    et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+    erat, sed diam voluptua. At vero eos et accusam et justo duo 
+    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+    sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+    sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+    magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+        et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+        erat, sed diam voluptua. At vero eos et accusam et justo duo 
+        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+        sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+        &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+        sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+        magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+            et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo 
+            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+            sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+            &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+            magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat, sed diam voluptua. At vero eos et accusam et justo duo 
+                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+                &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                    erat, sed diam voluptua. At vero eos et accusam et justo duo 
+                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                    sanctus est Lorem ipsum dolor sit amet.
+                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                    sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+            &lt;/section&gt;
+        &lt;/article&gt;
+        &lt;header style=&quot;opacity:0.9;padding:10px;position:sticky;margin:10px; background-color:white;top:0;border-style:solid;border-width:thin;&quot;&gt;
+            &lt;h1 style=&quot;opacity:1;&quot;&gt;Dritte &Uuml;berschrift&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;article style=&quot;margin:10px;&quot;&gt;
+            &lt;section&gt;
+                &lt;p style=&quot;background-color: lightgrey;&quot;&gt;orem ipsum dolor sit amet, consetetur sadipscing elitr, 
+sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+    et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+    erat, sed diam voluptua. At vero eos et accusam et justo duo 
+    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+    sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+    sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+    magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+        et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+        ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+        erat, sed diam voluptua. At vero eos et accusam et justo duo 
+        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+        sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+        &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+        sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+        magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+            et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo 
+            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+            sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+            &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+            magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat, sed diam voluptua. At vero eos et accusam et justo duo 
+                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+                &lt;p style=&quot;background-color: lightgrey;&quot;&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                    et justo duo dolores et ea rebum. Stet clita kasd gubergren, 
+                    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem 
+                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                    erat, sed diam voluptua. At vero eos et accusam et justo duo 
+                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                    sanctus est Lorem ipsum dolor sit amet.
+                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+                    sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+            &lt;/section&gt;
+        &lt;/article&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                                </code></pre>
+                                <iframe src="../html/aufgaben/aufgabe2/uebung2_2_1.html" frameborder="0"></iframe>
+                            </div>
+                    </div>
+                    <div class="task-container">
+                        <h2>Schauen Sie sich folgendes <a target="_blank" href="https://www.youtube.com/watch?v=HVmnv3k4__E" rel="noopener">Video</a> an und bauen Sie das dynamische Verhalten exakt nach (nur mit HTML und CSS, ohne JavaScript): </h2>
+                        <span></span>
+                        <div class="code-vs-render">
+                            <pre><code>
+                                &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;title&gt;&Uuml;bung 2.2&lt;/title&gt;
+            &lt;style&gt;
+                input:checked ~ div &gt; img { /* Selects elements that are preceded by a checked input */
+                        opacity: 0;
+                }
+            &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;&Uuml;bung 2.2&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;section&gt;
+            &lt;input type=&quot;checkbox&quot;&gt;&lt;span&gt;hide and show via checkbox&lt;/span&gt;
+            &lt;div style=&quot;border-style:solid;padding:4px;&quot;&gt;
+                &lt;img style=&quot;width:100%;&quot; src=&quot;https://upload.wikimedia.org/wikipedia/commons/a/a4/Hochschule_Bonn-Rhein-Sieg_Wolfgang_G&ouml;ddertz_Induktion.jpg&quot;&gt;
+            &lt;/div&gt;
+            
+        &lt;/section&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                            <iframe src="../html/aufgaben/aufgabe2/uebung2_2_2.html" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="task-container">
+                        <h2>2.3. Wireframe with HTML and CSS</h2>
+                        <span>Gegeben ist folgendes HTML-Wireframe:
+                            Mit welchem HTML- und CSS-Code kann man diesen Wireframe exakt nachbilden?
+                            Schreiben Sie Ihren CSS-Code direkt in die HTML-Datei. Geben Sie Ihren HTML- und CSS-Quellcode zusammen in dieses Textfeld ein:
+                        </span>
+                        <div class="code-vs-render">
+                            <pre><code>
+                                &lt;!DOCTYPE html&gt;
+&lt;html class=&quot; hhnxgjv idc0_332&quot;&gt;&lt;head&gt;
+&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=windows-1252&quot;&gt;
+
+&lt;style&gt;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  background-color: #b2d6d1;
+}
+
+input[type=text], input[type=number], textarea {
+  width: 75%;
+  padding: 6px;
+  border: 1px solid #ccc;
+}
+
+select {
+	width: 40%;
+  	padding: 6px;
+  	border: 1px solid #ccc;
+    background-color: #e0e0d1;
+}
+
+label {
+	padding: 6px 12px 24px 0;
+    text-align: right;
+}
+
+.container {
+  padding: 16px;
+  background-color: #ebebe0;
+}
+
+.col-25 {
+  text-align: right;
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+.row:after {
+  content: &quot;&quot;;
+  display: table;
+  clear: both;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body class=&quot;vsc-initialized&quot;&gt;
+&lt;h1 align=&quot;center&quot;&gt;Survey Form&lt;/h1&gt;
+&lt;div class=&quot;container&quot;&gt;
+	&lt;form&gt;
+    	&lt;p style=&quot;text-align: center&quot;&gt;Let us know how we can improve freeCodeCamp.&lt;/p&gt;
+    &lt;p&gt;&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;	
+    	&lt;div class=&quot;col-25&quot;&gt;
+    		&lt;label for=&quot;Name&quot;&gt;* Name:&lt;/label&gt;
+		&lt;/div&gt;
+    	&lt;div class=&quot;col-75&quot;&gt;
+    		&lt;input id=&quot;Name&quot; type=&quot;text&quot; placeholder=&quot;Enter your name&quot; required=&quot;&quot;&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-25&quot;&gt;
+    		&lt;label for=&quot;Email&quot;&gt;* Email:&lt;/label&gt;
+		&lt;/div&gt;
+    	&lt;div class=&quot;col-75&quot;&gt;
+    		&lt;input id=&quot;Email&quot; type=&quot;text&quot; placeholder=&quot;Enter your Email&quot; required=&quot;&quot;&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+    	&lt;div class=&quot;col-25&quot;&gt;
+    		&lt;label for=&quot;Age&quot;&gt;* Age:&lt;/label&gt;
+		&lt;/div&gt;
+    	&lt;div class=&quot;col-75&quot;&gt;
+    		&lt;input id=&quot;Age&quot; type=&quot;number&quot; placeholder=&quot;Age&quot; required=&quot;&quot;&gt;
+		&lt;/div&gt;
+    &lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;
+    	&lt;div class=&quot;col-25&quot;&gt;
+      		&lt;label for=&quot;role&quot;&gt;Which option best describes your current role?				&lt;/label&gt;
+    	&lt;/div&gt;
+    	&lt;div class=&quot;col-75&quot;&gt;
+      		&lt;select id=&quot;role&quot; name=&quot;role&quot;&gt;
+        	&lt;option value=&quot;student&quot; selected=&quot;selected&quot;&gt;Student&lt;/option&gt;
+        	&lt;option value=&quot;schueler&quot;&gt;Sch&uuml;ler&lt;/option&gt;
+        	&lt;option value=&quot;dozent&quot;&gt;Dozent&lt;/option&gt;
+            &lt;option value=&quot;other&quot;&gt;Other&lt;/option&gt;
+      		&lt;/select&gt;
+    	&lt;/div&gt;
+	&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;
+    	&lt;div class=&quot;col-25&quot;&gt;
+    		&lt;label for=&quot;likely&quot;&gt;* How likely is that you would recommend freeCodeCamp to a friend?&lt;/label&gt;
+		&lt;/div&gt;
+    	&lt;div class=&quot;col-75&quot;&gt;
+            &lt;div&gt;
+      		&lt;input id=&quot;a1&quot; type=&quot;radio&quot; name=&quot;group-a&quot;&gt;
+      		&lt;label for=&quot;b1&quot;&gt;Definitely&lt;/label&gt;&lt;br&gt;
+      		&lt;input type=&quot;radio&quot; id=&quot;a2&quot; name=&quot;group-a&quot;&gt;
+      		&lt;label for=&quot;b2&quot;&gt;Maybe&lt;/label&gt;&lt;br&gt;
+    		&lt;input type=&quot;radio&quot; id=&quot;a3&quot; name=&quot;group-a&quot;&gt;
+   		  	&lt;label for=&quot;b3&quot;&gt;Not sure&lt;/label&gt;
+   		 &lt;/div&gt;
+		&lt;/div&gt;
+    &lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;
+    	&lt;div class=&quot;col-25&quot;&gt;
+      		&lt;label for=&quot;role&quot;&gt;What do you like most in FCC:&lt;/label&gt;
+    	&lt;/div&gt;
+    	&lt;div class=&quot;col-75&quot;&gt;
+      		&lt;select id=&quot;role&quot; name=&quot;role&quot;&gt;
+        	&lt;option value=&quot;&quot; disabled=&quot;disabled&quot; selected=&quot;selected&quot;&gt;Select an option&lt;/option&gt;
+        	&lt;option value=&quot;free&quot;&gt;That it's free&lt;/option&gt;
+        	&lt;option value=&quot;code&quot;&gt;That it's about code&lt;/option&gt;
+            &lt;option value=&quot;camp&quot;&gt;That you can live in our alternative camp&lt;/option&gt;
+      		&lt;/select&gt;
+    	&lt;/div&gt;
+	&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;/p&gt;&lt;div class=&quot;row&quot;&gt;
+    	&lt;div class=&quot;col-25&quot;&gt;
+    		&lt;label for=&quot;likely&quot;&gt;Things that should be improved in the future&lt;br&gt;
+            (Check all that apply):&lt;/label&gt;
+		&lt;/div&gt;
+    	&lt;div class=&quot;col-75&quot;&gt;
+            &lt;div&gt;
+      		&lt;input id=&quot;b1&quot; type=&quot;checkbox&quot; name=&quot;group-b&quot;&gt;
+      		&lt;label for=&quot;b1&quot;&gt;Front-end Projects&lt;/label&gt;&lt;br&gt;
+      		&lt;input type=&quot;checkbox&quot; id=&quot;b2&quot; name=&quot;group-b&quot;&gt;
+      		&lt;label for=&quot;b2&quot;&gt;Back-end Projects&lt;/label&gt;&lt;br&gt;
+    		&lt;input type=&quot;checkbox&quot; id=&quot;b3&quot; name=&quot;group-b&quot;&gt;
+   		  	&lt;label for=&quot;b3&quot;&gt;Data Visualization&lt;/label&gt;
+   		 &lt;/div&gt;
+		&lt;/div&gt;
+    &lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+  &lt;/form&gt;&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;
+                            </code></pre>
+                            <iframe src="../html/aufgaben/aufgabe2/uebung2_3.html" frameborder="0"></iframe>
+                        </div>
+                    </div>
+
                 </div>
                 <div id="aufgabe-3" class="tab-content">
                   

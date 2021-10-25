@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>uebung3.3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        body{
+            margin: 0;
+        }
+        .container {
+            margin: 0;
+            display: grid;
+            grid-template:
+                'header'
+                'main'
+                'footer';
+            row-gap: 5vh;
+            height: 100vh;
+            grid-template-rows: 10vh 70vh 15vh;
+        }
+
+        header {
+            display: grid;
+            grid-area: header;
+            background-color: #363636;
+            justify-content: center;
+        }
+
+        main {
+            display: grid;
+            grid-area: main;
+            justify-items: center;
+            grid-template:
+                'heading heading'
+                'image-container order-now-container';
+            row-gap:2vh;
+        }
+
+        main h1 {
+            display: grid;
+            grid-area: heading;
+        }
+
+        .image-container {
+            display: grid;
+            grid-area: image-container;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: 500px;
+        }
+
+        .order-now-container {
+            width: 50%;
+            align-items: center;
+            justify-items: center;
+            display: grid;
+            grid-area: order-now-container;
+        }
+
+        .order-now-container button {
+            border-radius: 5px;
+            background-color: #f88e37;
+            color: #fdf2ed;
+            text-transform: uppercase;
+        }
+
+        footer {
+            background-color: #363636;
+            align-items: center;
+            justify-items: center;
+            display: grid;
+            justify-content: center;
+            grid-area: footer;
+            grid-template:
+                'footer-p'
+                'footer-button';
+            gap: 1vh;
+        }
+
+        footer p {
+            color: white;
+            display: grid;
+            grid-area: footer-p;
+        }
+
+        footer button {
+            border-radius: 5px;
+            background-color: #f88e37;
+            text-transform: uppercase;
+            color: #fdf2ed;
+            display: grid;
+            grid-area: footer-button;
+        }
+
+        header ul {
+            list-style-type: none;
+            display: grid;
+            grid-template: 'list-item list-item list-item list-item';
+            gap: 3vh;
+        }
+
+        header ul li {
+            display: grid;
+        }
+
+        header ul li a {
+            display: grid;
+            padding: 10px;
+            grid-area: list-item;
+            color: white;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 794px) {
+            .container {
+                row-gap: 5%;
+                grid-template-rows: 15vh 120vh 15vh;
+            }
+
+            header {}
+
+            footer {}
+
+            main {
+                grid-template:
+                    'heading'
+                    'image-container'
+                    'order-now-container';
+                row-gap: 2vh;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <header>
+            <ul>
+                <li><a href="#">The book series</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">The Author</a></li>
+                <li><a href="#">Free resources</a></li>
+            </ul>
+        </header>
+        <main>
+            <h1>You dont know JavaScript</h1>
+            <div class="image-container">
+                <img src="https://kaul.inf.h-brs.de/we/assets/img/landing-img.png">
+            </div>
+
+            <div class="order-now-container">
+                <div>
+                    <p>Don't just drift through javascript.</p>
+                    <p>Understand how javascript works</p>
+                    <p>Start your journey through the bumpy side of javascript</p>
+                </div>
+                <div style="justify-items:center">
+                    <button>order your copy now</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>The first ebook in the book series is absolutely free.</p>
+            <button>find out more about this offer</button>
+        </footer>
+    </div>
+</body>
+
+</html>

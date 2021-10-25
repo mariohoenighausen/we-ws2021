@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>uebung3.2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <style>
+             header{
+                grid-area:header;
+                background-color:red;
+                height:100%;
+            }
+            .left-aside{
+                grid-area:left-aside;
+                height:100%;
+                background-color: greenyellow;
+            }
+            .right-aside{
+                grid-area:right-aside;
+                background-color: purple;
+                height:100%;
+            }
+            .main-part{
+                grid-area:main;
+                height:100%;
+                background-color: blue;
+            }
+            .container{
+                display:grid;
+                grid-template:
+                'header'
+                'left-aside'
+                'main'
+                'right-aside';
+                grid-template-rows: 25% 25% 50% 25%;
+                grid-gap:1vh;
+                height:100vh;
+                }
+            @media only screen and (min-width: 992px) {
+                .container{
+                    display:grid;
+                    grid-template:
+                    'header header header header'
+                    'left-aside main main main'
+                    'right-aside right-aside right-aside right-aside';
+                    grid-template-rows: 25% 75% 25%;
+                    grid-gap:1vh;
+                    height:100vh;
+                }
+            }
+            @media only screen and (min-width: 1200px) {
+                .container{
+                    display:grid;
+                    grid-template:
+                    'header header header header'
+                    'left-aside main main right-aside';
+                    grid-template-rows: 25% 75% 25%;
+                    grid-gap:1vh;
+                    height:100vh;
+                }
+            }
+            
+            @media only screen and (min-width: 768px) {
+                
+            } 
+            @media only screen and (min-width: 600px) {
+                
+            }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <header></header>
+        <aside class="left-aside"></aside>
+        <main class="main-part"></main>
+        <aside class="right-aside"></aside>
+    </div>
+</body>
+</html>

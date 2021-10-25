@@ -690,7 +690,398 @@ label {
 
                 </div>
                 <div id="aufgabe-3" class="tab-content">
-                  
+
+                    <div class="task-container">
+                        <h2>3.1. Responsiv mit Flexbox Desktop-First</h2>
+                        <span>Spielen Sie zunächst das Flexbox Froggy-Spiel, um Flexbox zu lernen.
+                            Implementieren Sie dann ausschließlich mit HTML und CSS Flexbox folgendes
+                             responsive Webdesign nach der Desktop-First-Strategie!
+                        </span>
+                        <div class="code-vs-render">
+                            <pre><code>
+                                &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;uebung3.1&lt;/title&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;style&gt;
+            .container{
+                display:flex;
+                flex-direction: column;
+                gap:1vh;
+                margin:0;
+            }
+            header{
+                display:flex;
+                flex-direction: row;
+                width:100%;
+                height:250px;
+                background-color:red;
+            }
+            .content-container{
+                display:flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                height:70vh;
+                gap: 1vh;
+            }
+            .left-aside{
+                display:flex;
+                width: calc(25% - 1vh);
+                height:100%;
+                background-color: greenyellow;
+            }
+            .right-aside{
+                display:flex;
+                background-color: purple;
+                width: calc(25% - 1vh);
+                height:100%;
+            }
+            .main-part{
+                display:flex;
+                width: 50%;
+                height:100%;
+                background-color: blue;
+            }
+            @media only screen and (max-width: 794px){
+                .content-container{
+                    height:80vh;
+                }
+                .main-part{
+                    width:75%;
+                }
+                .right-aside{
+                    width:100%;
+                }
+            } 
+            @media only screen and (max-width: 480px){
+                header{
+                    display:flex;
+                    flex-direction: row;
+                    width:100%;
+                    height:250px;
+                }
+                .content-container{
+                   flex-direction: row;
+                   height:1000px;
+                }
+                .main-part{
+                    display:flex;
+                    height:50%;
+                    width:100%;
+                }
+
+                .right-aside{
+                    display:flex;
+                    height:25%;
+                    width:100%;
+                }
+                .left-aside{
+                    display:flex;
+                    height:25%;
+                    width:100%;
+                }
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;header&gt;&lt;/header&gt;
+        &lt;div class=&quot;content-container&quot;&gt;
+            &lt;aside class=&quot;left-aside&quot;&gt;&lt;/aside&gt;
+            &lt;main class=&quot;main-part&quot;&gt;&lt;/main&gt;
+            &lt;aside class=&quot;right-aside&quot;&gt;&lt;/aside&gt;
+        &lt;/div&gt;
+        
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                            <iframe src="../html/aufgaben/aufgabe3/aufgabe3_1.html" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="task-container">
+                        <h2>3.2. Responsiv mit Grid Mobile-First</h2>
+                        <span>Spielen Sie zunächst das Grid Garden -Spiel, um Grid Layout zu lernen.
+
+                            Implementieren Sie dann das gleiche responsive Webdesign wie in Aufgabe 3.1 allerdings
+                             mit Grid und der Mobile-First-Strategie! Vermeiden Sie diesmal außerdem das Erscheinen
+                              von Scrollbars.
+                        </span>
+                        <div class="code-vs-render">
+                            <pre><code>
+                                &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;uebung3.2&lt;/title&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;style&gt;
+             header{
+                grid-area:header;
+                background-color:red;
+                height:100%;
+            }
+            .left-aside{
+                grid-area:left-aside;
+                height:100%;
+                background-color: greenyellow;
+            }
+            .right-aside{
+                grid-area:right-aside;
+                background-color: purple;
+                height:100%;
+            }
+            .main-part{
+                grid-area:main;
+                height:100%;
+                background-color: blue;
+            }
+            .container{
+                display:grid;
+                grid-template:
+                'header'
+                'left-aside'
+                'main'
+                'right-aside';
+                grid-template-rows: 25% 25% 50% 25%;
+                grid-gap:1vh;
+                height:100vh;
+                }
+            @media only screen and (min-width: 992px) {
+                .container{
+                    display:grid;
+                    grid-template:
+                    'header header header header'
+                    'left-aside main main main'
+                    'right-aside right-aside right-aside right-aside';
+                    grid-template-rows: 25% 75% 25%;
+                    grid-gap:1vh;
+                    height:100vh;
+                }
+            }
+            @media only screen and (min-width: 1200px) {
+                .container{
+                    display:grid;
+                    grid-template:
+                    'header header header header'
+                    'left-aside main main right-aside';
+                    grid-template-rows: 25% 75% 25%;
+                    grid-gap:1vh;
+                    height:100vh;
+                }
+            }
+            
+            @media only screen and (min-width: 768px) {
+                
+            } 
+            @media only screen and (min-width: 600px) {
+                
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;header&gt;&lt;/header&gt;
+        &lt;aside class=&quot;left-aside&quot;&gt;&lt;/aside&gt;
+        &lt;main class=&quot;main-part&quot;&gt;&lt;/main&gt;
+        &lt;aside class=&quot;right-aside&quot;&gt;&lt;/aside&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                            <iframe src="../html/aufgaben/aufgabe3/aufgabe3_2.html" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="task-container">
+                        <h2>3.3. Responsiv mit Grid</h2>
+                        <span>Implementieren Sie folgende Landing Page responsiv mit Grid Layout.
+                             Vermeiden Sie außerdem das Erscheinen von Scrollbars so weit wie möglich.
+                             Für das Bild dürfen Sie die URL ./assets/img/landing-img.png verwenden. 
+                        </span>
+                        <div class="code-vs-render">
+                            <pre><code>
+                                &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;uebung3.3&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;style&gt;
+        body{
+            margin: 0;
+        }
+        .container {
+            margin: 0;
+            display: grid;
+            grid-template:
+                'header'
+                'main'
+                'footer';
+            row-gap: 5vh;
+            height: 100vh;
+            grid-template-rows: 10vh 70vh 15vh;
+        }
+
+        header {
+            display: grid;
+            grid-area: header;
+            background-color: #363636;
+            justify-content: center;
+        }
+
+        main {
+            display: grid;
+            grid-area: main;
+            justify-items: center;
+            grid-template:
+                'heading heading'
+                'image-container order-now-container';
+            row-gap:2vh;
+        }
+
+        main h1 {
+            display: grid;
+            grid-area: heading;
+        }
+
+        .image-container {
+            display: grid;
+            grid-area: image-container;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: 500px;
+        }
+
+        .order-now-container {
+            width: 50%;
+            align-items: center;
+            justify-items: center;
+            display: grid;
+            grid-area: order-now-container;
+        }
+
+        .order-now-container button {
+            border-radius: 5px;
+            background-color: #f88e37;
+            color: #fdf2ed;
+            text-transform: uppercase;
+        }
+
+        footer {
+            background-color: #363636;
+            align-items: center;
+            justify-items: center;
+            display: grid;
+            justify-content: center;
+            grid-area: footer;
+            grid-template:
+                'footer-p'
+                'footer-button';
+            gap: 1vh;
+        }
+
+        footer p {
+            color: white;
+            display: grid;
+            grid-area: footer-p;
+        }
+
+        footer button {
+            border-radius: 5px;
+            background-color: #f88e37;
+            text-transform: uppercase;
+            color: #fdf2ed;
+            display: grid;
+            grid-area: footer-button;
+        }
+
+        header ul {
+            list-style-type: none;
+            display: grid;
+            grid-template: 'list-item list-item list-item list-item';
+            gap: 3vh;
+        }
+
+        header ul li {
+            display: grid;
+        }
+
+        header ul li a {
+            display: grid;
+            padding: 10px;
+            grid-area: list-item;
+            color: white;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 794px) {
+            .container {
+                row-gap: 5%;
+                grid-template-rows: 15vh 120vh 15vh;
+            }
+
+            header {}
+
+            footer {}
+
+            main {
+                grid-template:
+                    'heading'
+                    'image-container'
+                    'order-now-container';
+                row-gap: 2vh;
+                
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+
+
+        &lt;header&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;The book series&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Testimonials&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;The Author&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Free resources&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/header&gt;
+        &lt;main&gt;
+            &lt;h1&gt;You dont know JavaScript&lt;/h1&gt;
+            &lt;div class=&quot;image-container&quot;&gt;
+                &lt;img src=&quot;https://kaul.inf.h-brs.de/we/assets/img/landing-img.png&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;order-now-container&quot;&gt;
+                &lt;div&gt;
+                    &lt;p&gt;Don't just drift through javascript.&lt;/p&gt;
+                    &lt;p&gt;Understand how javascript works&lt;/p&gt;
+                    &lt;p&gt;Start your journey through the bumpy side of javascript&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div style=&quot;justify-items:center&quot;&gt;
+                    &lt;button&gt;order your copy now&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/main&gt;
+        &lt;footer&gt;
+            &lt;p&gt;The first ebook in the book series is absolutely free.&lt;/p&gt;
+            &lt;button&gt;find out more about this offer&lt;/button&gt;
+        &lt;/footer&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+                            </code></pre>
+                            <iframe src="../html/aufgaben/aufgabe3/aufgabe3_3.html" frameborder="0"></iframe>
+                        </div>
+                    </div>
                 </div>
                 <div id="aufgabe-4" class="tab-content">
 

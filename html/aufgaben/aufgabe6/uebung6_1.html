@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übung 6.1</title>
+    <style></style>
+</head>
+
+<body>
+    <label for="bracketPairsInput">Hier Klamerpaare eingeben:</label>
+    <input name="bracketPairsInput" id="bracketPairsInput" type="text">
+    <button id="submitBracketPairsInputBtn">Check if valid</button>
+    <script>
+        document.getElementById("submitBracketPairsInputBtn").addEventListener("click", checkExpression);
+        
+        function checkExpression(){
+            document.getElementById("bracketPairsInput").style.backgroundColor = checkBrackets() ? "green" : "red"; 
+            console.assert(false == checkBrackets(),"")
+        }
+        function checkBrackets() {
+            const m = new Map();
+            m.set("(", ")");
+            m.set("[", "]");
+            m.set("{", "}");
+
+            var bracketPairsInput = document.getElementById("bracketPairsInput").value
+            var validBracketsStack = [];
+            //const letterRegex = new RegExp('[^]/}/)]');
+            //getting rid of everything but the brackets
+            const pattern = /([^\[\]\(\)\{\}]+)/g;
+            var cleanedBracketPairsInput = bracketPairsInput.replace(pattern, "")
+
+            isOpenNormalBracket = (s) => { return s == '(' };
+            isOpenRectangularBracket = (s) => { return s == '[' };
+            isOpenCurlyBracket = (s) => { return s == '{' };
+            isEmpty = (arr) =>{return arr == 0};
+
+            for(idx = 0; idx < cleanedBracketPairsInput.length; idx++){
+                if (isOpenNormalBracket(cleanedBracketPairsInput[idx]) || isOpenRectangularBracket(cleanedBracketPairsInput[idx]) || isOpenCurlyBracket(cleanedBracketPairsInput[idx])) {
+                    validBracketsStack.push(cleanedBracketPairsInput[idx]);
+                    continue;
+                }
+
+                if (isEmpty(validBracketsStack)) {
+                    return false;
+                }
+                var bracketPairsInputCheck;
+                switch (cleanedBracketPairsInput[idx]) {
+                    case ')':
+                        bracketPairsInputCheck = validBracketsStack.pop();
+                        if(isOpenCurlyBracket(bracketPairsInputCheck) || isOpenRectangularBracket(bracketPairsInputCheck)){
+                            return false;
+                        }
+                        break;
+
+                    case '}':
+                        bracketPairsInputCheck = validBracketsStack.pop();
+                        if(isOpenNormalBracket(bracketPairsInputCheck) || isOpenRectangularBracket(bracketPairsInputCheck)){
+                            return false;
+                        }                        
+                        break;
+
+                    case ']':
+                        bracketPairsInputCheck = validBracketsStack.pop();
+                        if(isOpenNormalBracket(bracketPairsInputCheck) || isOpenCurlyBracket(bracketPairsInputCheck)){
+                            return false;
+                        }
+                        break;
+                }
+            }
+            return validBracketsStack.length == 0;
+        };
+    </script>
+</body>
+
+</html>
+
+<!-- (DaaD[dasds{sad}])-->

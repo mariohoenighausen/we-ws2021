@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uebung 5.1</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div style="display: none;">
+            <div id="demo" >
+            </div>
+        </div>
+
+        <table id="performanceMeasures">
+        </table>
+    </main>
+    <footer></footer>
+    <script>
+        /*about:config 
+            privacy.reduceTimerPrecision = false;
+            privacy.reduceTimerPrecision.unconditional = false;
+        */
+        const table = document.getElementById("performanceMeasures");
+        const m = new Map();
+        const domOps = ["innerHTML","innerText","textContent","outerHTML"];
+        domOps.forEach( (item) =>{
+            const t0 = performance.now();
+            document.getElementById("demo").item = `${item}`;
+            const t1 = performance.now();
+            m.set(item,t1-t0); 
+            console.log(t1-t0);
+        });
+        console.log(m);
+        var idx = 0;
+        for(const [key,value] of m){
+            var row = table.insertRow(idx);
+            var cellOrdinal = row.insertCell(0);
+            cellOrdinal.innerHTML = key;
+            var cell = row.insertCell(1);
+            cell.innerHTML = value;
+            idx++;
+        } 
+    </script>
+</body>
+</html>

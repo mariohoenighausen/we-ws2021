@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uebung 5.3</title>
+    <style>
+        #relationsForm {
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 'relationsForm-submit relationsForm-submit';
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>TopSorter</h1>
+    </header>
+    <main id="main">
+        <p>Add binary relations to a list </p>
+        <button onclick="addRelation()">Add Relation</button>
+
+        <form id="relationsForm">
+        </form>
+        <input id="relationsForm-submit" style="grid-area: relationsForm-submit;" onclick="getInputsByID()"
+            type="submit" value="Submit">
+        <p>A possible topological order is: </p>
+
+    </main>
+    <footer></footer>
+    <script src="uebung5_3.js"></script>
+</body>
+
+</html> 
+<!-- form.style.gridTemplateAreas += "relationsForm-input-" + (relFormInCnt-1) + " relationsForm-input-" + relFormInCnt;
+    https://stackoverflow.com/questions/47394549/how-to-modify-grid-template-areas-with-javascript
+    https://dev.to/kaelscion/dynamically-filling-in-a-css-grid-with-javascript-5geb
+    https://itnext.io/using-the-dom-like-a-pro-163a6c552eba -->

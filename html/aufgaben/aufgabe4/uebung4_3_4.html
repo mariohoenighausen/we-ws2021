@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uebung 4.3.4</title>
+</head>
+
+<body>
+    <p>Shows all 2000 fibonacchi numbers</p>
+    <button id="tableBtn" onClick="fibPrint()">Calculate numbers</button>
+    <table id="fibnums">
+    </table>
+    <script>
+        function fib(n, a = BigInt(0), b = BigInt(1)){
+            if( n == 0){
+                return a;
+            }
+            else if(n == 1){
+                return b;
+            }
+            return fib(n - 1,b , a + b)
+        }
+        function fibPrint() {
+            var table = document.getElementById("fibnums");
+
+            let fibs = [];
+            for (idx = 0; idx <= 2000; idx++) {
+                fibs.push(fib(idx));
+            } 
+            for (item = 0; item < fibs.length; item++) {
+                var row = table.insertRow(item);
+                var cellOrdinal = row.insertCell(0);
+                cellOrdinal.innerHTML = "Fib-Nr." + item;
+                var cell = row.insertCell(1);
+                cell.innerHTML = fibs[item];
+                console.log(item);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übung 6.2</title>
+</head>
+
+<body>
+
+    <script>
+
+        class Vorrang {
+            constructor(list) {
+                //this.list = list.flat();
+                this.graph = new Graph();
+                this.createGraph(this.graph, list);
+                this.list = this.topSort(this.graph);
+                this.counter = 0;
+            }
+            [Symbol.iterator]() {
+                return {
+                    next: () => {
+                        this.counter++;
+                        if (this.counter < this.list.length) {
+                            return {
+                                value: undefined,
+                                done: true
+                            };
+                        }
+                        return {
+                            value: this.list[this.counter],
+                            done: false
+                        };
+                    }
+                }
+            }
+            topSort(graph) {
+                const knoten = Object.keys(graph.adjazenzListe);
+                const besuchteKnoten = {};
+                const topNums = {};
+                var n = knoten.length - 1;
+                for (const k of knoten) {
+                    if (!besuchteKnoten[k]) {
+                        n = this.topSortHelper(k, n, besuchteKnoten, topNums)
+                    }
+                }
+                return topNums;
+            }
+            topSortHelper(k, n, besuchteKnoten, topNums) {
+                besuchteKnoten[k] = true;
+                const nachbarn = this.graph.adjazenzListe[k];
+                for (const nachbar of nachbarn) {
+                    if (!besuchteKnoten[nachbar]) {
+                        n = this.topSortHelper(nachbar, n, besuchteKnoten, topNums);
+                    }
+                }
+                topNums[k] = n;
+                return n - 1;
+            }
+        createGraph(graph, list) {
+            const s = new Set()
+            for (const idx of list) {
+                s.add(idx[0]);
+                s.add(idx[1])
+            }
+            for (const idx of s) {
+                graph.addKnoten(idx);
+            }
+            for (const idx of list) {
+                graph.addKante(idx[0], idx[1]);
+            }
+        }
+        }
+        class Graph {
+            constructor() {
+                this.adjazenzListe = {};
+            }
+            addKnoten(knoten) {
+                if (!this.adjazenzListe[knoten]) {
+                    this.adjazenzListe[knoten] = [];
+                }
+            }
+            addKante(knoten1, knoten2) {
+                this.adjazenzListe[knoten1].push(knoten2);
+            }
+        }
+
+        // var relFormInCnt = 0;
+        // const relationsList = [];
+        // const graph = new Graph();
+        // function addRelation() {
+        //     const form = document.getElementById("relationsForm");
+        //     var self = this;
+        //     const submit = document.getElementById("relationsForm-submit");
+        //     for (idx = 0; idx < 2; idx++) {
+        //         const newID = 'relationsForm-input-' + relFormInCnt++;
+        //         const input = document.createElement("input");
+        //         input.id = newID;
+        //         input.type = "text";
+        //         //input.style.gridArea = newID;
+        //         form.appendChild(input);
+        //     }
+        // }
+        // function getInputsByID() {
+        //     var temp = [];
+        //     var jdx = 0;
+        //     for (idx = 0; idx < relFormInCnt; idx++) {
+        //         temp.push(document.getElementById(`relationsForm-input-${idx}`).value);
+        //         if (idx % 2 != 0) {
+        //             relationsList.push(temp);
+        //             temp = [];
+        //         }
+        //     }
+        //     getTopSort();
+        // }
+
+
+        // function getTopSort() {
+        //     createGraph(graph, relationsList);
+        //     const res = topSort(graph);
+        //     console.log(res);
+        //     const span = document.createElement("span");
+        //     const keys = Object.keys(res)
+        //     keys.reverse().forEach((s) => span.append(s + " "))
+        //     document.getElementsByTagName("main")[0].appendChild(span)
+        //     relationsList.forEach(() => relationsList.pop())
+        // }
+        const studentenLeben = new Vorrang([
+            ["schlafen", "studieren"],
+            ["essen", "studieren"],
+            ["studieren", "prüfen"]
+        ]);
+
+        for (const next of studentenLeben) {
+            console.log(next);
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!--  class Vorrang {
+   constructor(list) {
+       //this.list = list.flat();
+       this.graph = new Graph();
+       createGraph(this.graph, list);
+       this.list = this.topSort(this.graph);
+
+       this.counter = 0;
+     }
+     [Symbol.iterator]() {
+       return {
+         next: () => {
+           this.counter++;
+           if (this.counter < this.list.length) {
+             return {
+               value: undefined,
+               done: true
+             };
+           }
+           return {
+             value: this.list[this.counter],
+             done: false
+           };
+         }
+       }
+     }
+
+   topSortHelper(k, n, besuchteKnoten, topNums) {
+     besuchteKnoten[k] = true;
+     const nachbarn = this.graph.adjazenzListe[k];
+     for (const nachbar of nachbarn) {
+       if (!besuchteKnoten[nachbar]) {
+         n = this.topSortHelper(nachbar, n, besuchteKnoten, topNums);
+       }
+     }
+     topNums[k] = n;
+     return n - 1;
+   }
+
+   topSort(graph) {
+     const knoten = Object.keys(graph.adjazenzListe);
+     const besuchteKnoten = {};
+     const topNums = {};
+     var n = knoten.length - 1;
+     for (const k of knoten) {
+       if (!besuchteKnoten[k]) {
+         n = this.topSortHelper(k, n, besuchteKnoten, topNums)
+       }
+     }
+     return topNums;
+   }
+ }
+ class Graph {
+   constructor() {
+     this.adjazenzListe = {};
+   }
+   addKnoten(knoten) {
+     if (!this.adjazenzListe[knoten]) {
+       this.adjazenzListe[knoten] = [];
+     }
+   }
+   addKante(knoten1, knoten2) {
+     this.adjazenzListe[knoten1].push(knoten2);
+   }
+ }
+
+ function createGraph(graph, list) {
+   const s = new Set()
+   for (const idx of list) {
+     s.add(idx[0]);
+     s.add(idx[1])
+   }
+   for (const idx of s) {
+     graph.addKnoten(idx);
+   }
+   for (const idx of list) {
+     graph.addKante(idx[0], idx[1]);
+   }
+ }
+
+
+ const studentenLeben = new Vorrang([
+   ["schlafen", "studieren"],
+   ["essen", "studieren"],
+   ["studieren", "prüfen"]
+ ]);
+
+ for (const next of studentenLeben) {
+   console.log(next);
+ } -->

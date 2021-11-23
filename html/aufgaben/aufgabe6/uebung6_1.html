@@ -21,14 +21,9 @@
             console.assert(false == checkBrackets(),"")
         }
         function checkBrackets() {
-            const m = new Map();
-            m.set("(", ")");
-            m.set("[", "]");
-            m.set("{", "}");
 
             var bracketPairsInput = document.getElementById("bracketPairsInput").value
             var validBracketsStack = [];
-            //const letterRegex = new RegExp('[^]/}/)]');
             //getting rid of everything but the brackets
             const pattern = /([^\[\]\(\)\{\}]+)/g;
             var cleanedBracketPairsInput = bracketPairsInput.replace(pattern, "")

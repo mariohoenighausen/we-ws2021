@@ -38,3 +38,4 @@ Eine akademische Arbeit stellt eine individuelle Leistung dar, die eigenständig
 
 "Ich erkläre hiermit, dass ich den akademischen Ehrencodex kenne und über die Folgen einer Missachtung oder Verletzung aufgeklärt worden bin."`
 
+// https://github.com/stopwords-iso/stopwords-de

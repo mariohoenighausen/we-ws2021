@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übung 8.2</title>
+</head>
+
+<body>
+    <p>Click on the button to load two text files and combine their contents</p>
+    <button onclick="doFetchCombined()">Fetch</button>
+    <pre id="ausgabe"></pre>
+    <script>
+        async function doFetchCombined() {
+            const header = {
+                method: 'GET',
+                headers: { 'Content-type': 'html/text; charset=UTF-8' }
+            };
+            try {
+                const aResponse = await fetch('http://localhost:5500/html/aufgaben/aufgabe8/A.txt', header);
+                const bResponse = await fetch('http://localhost:5500/html/aufgaben/aufgabe8/B.txt', header);
+                const aTextResponse = await aResponse.text();
+                const bTextResponse = await bResponse.text();
+                splitAndPrint(aTextResponse, bTextResponse);
+            }
+            catch (err) {
+                console.log(err);
+            }   
+        }
+        function splitAndPrint(aTextResponse, bTextResponse) {
+            const aTextResponseSplitted = aTextResponse.split("\n");
+            const bTextResponseSplitted = bTextResponse.split("\n");
+            const pre = document.getElementById("ausgabe");
+            const max = Math.max(aTextResponseSplitted.length, bTextResponseSplitted.length);
+
+            for (var i = 0; i < max; i++) {
+                var newSpan1;
+                var newSpan2;
+                var newLine = document.createElement("div");
+
+                newSpan1 = document.createElement("span");
+                newSpan1.style.color = "red";
+                newSpan1.innerHTML = aTextResponseSplitted[i];
+                newLine.appendChild(newSpan1);
+
+                newSpan2 = document.createElement("span");
+                newSpan2.style.color = "blue";
+                newSpan2.innerHTML = bTextResponseSplitted[i];
+                newLine.appendChild(newSpan2);
+
+                pre.appendChild(newLine);
+            }
+        }
+    </script>
+</body>
+
+</html>

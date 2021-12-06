@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Übung 8.3</title>
+    <style>
+        .container {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "header header header"
+                "left-aside main right-aside"
+                "footer footer footer";
+        }
+
+        .header {
+            height: 15vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "header-hero header-hero header-hero"
+                "header-nav header-nav header-nav";
+            grid-area: header;
+            background-color: #c24f4f;
+            margin: 0;
+
+        }
+
+        .header-hero {
+            grid-area: header-hero;
+            display: grid;
+            justify-content: center;
+        }
+
+        .header-nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "header-nav-ul header-nav-ul .";
+            grid-area: header-nav;
+        }
+
+        .header-nav-ul {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: column;
+            grid-template-areas:
+                ".";
+            grid-area: header-nav-ul;
+        }
+
+        .header-nav-ul>li>a {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border: 13px solid #1C6EA4;
+            border-radius: 40px 40px 40px 40px;
+            background-color:#1C6EA4;
+        }
+
+        .header-nav-ul>li>a:focus {
+            text-decoration: underline;
+        }
+
+        .header-nav-ul>li>a:hover {
+            text-decoration: underline;
+        }
+
+        .left-aside {
+            background-color: #c28283;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-area: left-aside;
+        }
+
+        .left-aside>#left-aside-ul {
+            list-style-type: none;
+        }
+        .left-aside>#left-aside-ul>li{
+            border: 13px solid #1C6EA4;
+            border-radius: 40px 40px 40px 40px;
+            background-color:#1C6EA4;
+            margin:10px;
+        }
+        .left-aside>#left-aside-ul>li>a {
+            text-decoration: none;
+            font-size: 18px;
+            color:white
+        }
+        
+        .left-aside>#left-aside-ul>li>a:focus {
+            text-decoration: underline dotted;
+        }
+
+        .left-aside>#left-aside-ul>li>a:hover {
+            text-decoration: underline dotted;
+        }
+
+        .right-aside {
+            background-color: #c28283;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-area: right-aside;
+        }
+
+        .right-aside>#right-aside-ul {
+            list-style-type: none;
+        }
+
+        .right-aside>#right-aside-ul>li>a {
+            text-decoration: none;
+        }
+
+        .right-aside>#right-aside-ul>li>a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            height: 25;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: column;
+            grid-template-areas:
+                ".";
+            grid-area: footer;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white
+        }
+
+        .footer-nav-ul {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-auto-columns: 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: column;
+            grid-template-areas:
+                ".";
+            grid-area: footer-nav-ul;
+        }
+
+        .footer-nav-ul>li>a {
+            text-decoration: none;
+            color: white
+        }
+
+        .footer-nav-ul>li>a:focus {
+            text-decoration: underline;
+        }
+
+        .footer-nav-ul>li>a:hover {
+            text-decoration: underline;
+        }
+
+        .main {
+            height: 70vh;
+            grid-area: main;
+            background-color: #95d2f4;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-hero">
+                <h1>WWW-Navigator</h1>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-nav-ul" id="header-ul">
+                </ul>
+            </nav>
+        </header>
+        <aside class="left-aside">
+            <ul id="left-aside-ul">
+            </ul>
+        </aside>
+        <main class="main">
+            <article id="main-article">
+            </article>
+        </main>
+        <aside class="right-aside">
+            <ul id="right-aside-ul"></ul>
+        </aside>
+        <footer class="footer">
+            <div class="footer-hero">
+                <h1>Footer:</h1>
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-nav-ul" id="footer-nav-ul">
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </footer>
+
+    </div>
+    <script>
+        var elements = [];
+        window.onload = async function () {
+            elements = await getElements();
+            await populateHeaderNavbar();
+        };
+        async function getElements() {
+            const header = {
+                method: 'GET',
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8'
+                }
+            }
+            try {
+                const response = await fetch('http://localhost:5500/html/aufgaben/aufgabe8/navigator_contents.json', header);
+                const result = await response.json();
+                return await result;
+            }
+            catch (err) {
+                console.log(err);
+            }
+        }
+        function populateHeaderNavbar() {
+            const headerUl = document.getElementById("header-ul");
+            Object.keys(elements).forEach(category => {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.innerHTML = category;
+                a.href = "#"
+                a.onclick = () => populateLeftAside(category);
+                li.appendChild(a);
+                headerUl.appendChild(li);
+            });
+        }
+        function populateLeftAside(category) {
+            const leftAsideUl = document.getElementById("left-aside-ul");
+            leftAsideUl.textContent = "";
+            Object.keys(elements[category]).forEach(subcategory => {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.innerHTML = subcategory;
+                a.href = "#"
+                a.onclick = () => {
+                    //a.style.textDecoration = "underline dotted";
+                    populateMain(category, subcategory);
+                    populateRightAside(category, subcategory);
+                };
+                li.appendChild(a);
+                leftAsideUl.appendChild(li);
+            })
+        }
+        function populateMain(category, subcategory) {
+            const article = document.getElementById("main-article");
+            article.innerText = "";
+            article.innerText = elements[category][subcategory]["content"];
+        }
+        function populateRightAside(category, subcategory) {
+            const article = document.getElementById("right-aside-ul");
+            article.innerText = "";
+            const references = elements[category][subcategory]["references"];
+            references.forEach(x => {
+                const a = document.createElement("a");
+                a.href = x;
+                a.innerText = x;
+                a.target = "_blank";
+                const li = document.createElement("li");
+                li.appendChild(a);
+                article.appendChild(li);
+            });
+        }
+    </script>
+</body>
+
+</html>

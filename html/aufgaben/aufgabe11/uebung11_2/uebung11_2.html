@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uebung 11.2</title>
+</head>
+<body>
+<div id="app">
+    <navbar v-bind:links="links" v-bind:base-style="baseStyle1"></navbar>
+    <navbar v-bind:links="links" v-bind:base-style="baseStyle2"></navbar>
+    <p>Click on the button to change the first navbars direction</p>
+    <button v-on:click="changeNavbarDirection()"> Change direction</button>
+    <template v-for="(component,idx) in components" >
+        <component :is="component.title" v-bind:component="component"></component>
+    </template>
+</div>
+<script src="https://unpkg.com/vue"></script>
+<script type="module" src="./App.mjs"></script>
+</body>
+</html>

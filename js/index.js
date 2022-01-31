@@ -1,7 +1,7 @@
 async function runTaksTest() {
     const headers = { "Content-Type": "application/json"};
     try{
-        let qAndAsResponse = await fetch('http://127.0.0.1:5500/tasks.json', headers);
+        let qAndAsResponse = await fetch('https://www2.inf.h-brs.de/~mhoeni2s/tasks.json', headers);
         let qAndAsJSON = await qAndAsResponse.json();
         return qAndAsJSON
     }

@@ -14,7 +14,7 @@ class CodeDisplay extends HTMLElement {
     const headers = { "Content-Type": "text/html; charset=UTF-8" };
     try {
       const codeResponse = await fetch(
-        `http://localhost:5500/${this.attributes.code.value}`,headers
+        `https://www2.inf.h-brs.de/~mhoeni2s/${this.attributes.code.value}`,headers
       );
       const codeAsJson = await codeResponse.text();
       const code = document.createElement("code");

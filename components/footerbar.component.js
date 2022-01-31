@@ -22,9 +22,9 @@ footerBarTemplate.innerHTML = `
 </style>
 <nav>
 <ul>
-<li><a href="../pages/about.html">About</a></li>
-<li><a href="../pages/contact.html">Contact</a></li>
-<li><a href="../pages/legal.html">Legal</a></li>
+<li><a href="https://www2.inf.h-brs.de/~mhoeni2s/pages/about.html">About</a></li>
+<li><a href="https://www2.inf.h-brs.de/~mhoeni2s/pages/contact.html">Contact</a></li>
+<li><a href="https://www2.inf.h-brs.de/~mhoeni2s/pages/legal.html">Legal</a></li>
 </ul>
 </nav>
 <div class="legal-notice">

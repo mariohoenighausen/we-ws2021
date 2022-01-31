@@ -51,7 +51,7 @@ a{
 }
 </style>
 <div class="hero-heading">
-<a href="/">WE 21/22 Mario Hönighausen</a>
+<a href="../index.html">WE 21/22 Mario Hönighausen</a>
 </div>
 `;
 class HeroHeading extends HTMLElement{

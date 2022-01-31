@@ -1,0 +1,17 @@
+header{
+    display:grid;
+}
+main{
+    display:grid;
+}
+footer{
+    display:grid;
+}
+.back-link {
+    text-decoration:none;
+    color:black;
+}
+.back-link:hover{
+    text-decoration: underline;
+    color:black;
+}

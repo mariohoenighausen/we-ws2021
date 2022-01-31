@@ -1,0 +1,1394 @@
+{
+  "html": {
+    "tasks": [
+      {
+        "title": "1.1. Fachliche Argumentation über Erfolgsprinzipien des WWW ",
+        "description":{
+            "text":"",
+            "wireframe":""
+        },
+        "qAndAs": [
+          {
+            "q": "Mit welchen fachlichen Argumenten wurde das WWW-Proposal von TBL abgelehnt?",
+            "submitted": {
+              "a": "Es wurde als zu ”vage” bzw. zu ungenau in Bezug auf die Evolvierbarkeit des Webs und den Umgang mit insbesondere ”Broken Links” und referentieller Integrität gesehen und entsprach nicht dem damaligen akademischen Konsens bzw. wurde als degressive Entwicklung verkannt.",
+              "code": ""
+            },
+            "improved": {
+              "a": "Es wurde als zu ”vage” bzw. zu ungenau in Bezug auf die Evolvierbarkeit des Webs und den Umgang mit insbesondere ”Broken Links” und referentieller Integrität gesehen und entsprach nicht dem damaligen akademischen Konsens bzw. wurde als degressive Entwicklung verkannt.",
+              "code": ""
+            }
+          },
+          {
+            "q": "Was sind die fachlichen Argumente, warum das WWW dennoch ein Erfolg wurde?",
+            "submitted": {
+              "a": "Durch die Orthogonalität der Entwicklungsmöglichkeiten des Webs (zu Beginnn Interaktion == http, Representation == HTML und Identification == URI), sowie der nicht nötigen mathematischen Rigorosität am Beispiel der Möglichkeit von broken Links, die also kein größeres Verständnis von referentieller Integrität zum rudimentären Erstellen einer Webseite nötig machten.",
+              "code": ""
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          },
+          {
+            "q": "Was wäre der Preis für die garantierte Verhinderung von “broken links”?",
+
+            "submitted": {
+              "a": "Die eingeschränkte, nicht orthogonale, zentralisierte Entwicklung und das Verhalten des Webs und seiner Technologien wären der Preis gewesen. Es müsste ebenso referentielle Integrietät garantiert werden.",
+              "code": ""
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          },
+          {
+            "q": "Sie bekommen im Browser den HTTP Status Code 200. Was bedeutet das?",
+            "submitted": {
+              "a": "Bei erfolgreichen http-Anfragen, wird der Code 200 zurückgegeben, welcher ein „OK“ symbolisiert. Die genaue Bedeutung hängt aber vom jeweiligen http-Verb ab.",
+              "code": ""
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          },
+          {
+            "q": "",
+            "submitted": {
+              "a": "",
+              "code": ""
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          }
+        ]
+      },
+      {
+        "title": "1.2. HTTP",
+        "description":{
+            "text":"",
+            "wireframe":""
+        },
+        "qAndAs": [
+          {
+            "q": "Sie bekommen im Browser den HTTP Status Code 200. Was hat das zu bedeuten? ",
+            "submitted": {
+              "a": "Bei erfolgreichen http-Anfragen, wird der Code 200 zurückgegeben, welcher ein „OK“ symbolisiert.Die genaue Bedeutung hängt aber vom jeweiligen http-Verb ab.",
+              "code": ""
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          },
+          {
+            "q": "Sie bekommen im Browser den HTTP Status Code 301. Was hat das zu bedeuten? ",
+            "submitted": {
+              "a": "Die „Moved Permanently“ Antwort, beschreibt bei GET oder HEAD Anfragen, dass eine Ressource (HTML oder andere) auf eine andere URL verschoben wurde.",
+              "code": ""
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          },
+          {
+            "q": "Sie bekommen im Browser den HTTP Status Code 400. Was hat das zu bedeuten? Was können Sie dagegen tun?",
+            "submitted": {
+              "a": "Die „Bad Request“ Antwort beschreibt, dass der Server nicht antworten (die Ressource bzw. der Pfad angegebene Pfad zur Ressource existiert gar nicht) oder das durch Clientseitige Fehler die Anfrage nicht bearbeiten werden kann. Die Anfrage sollte, vom Client so verändert werden, dass sie korrekt formuliert ist. Browser Cache leeren",
+              "code": ""
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          },
+          {
+            "q": "Sie bekommen im Browser den HTTP Status Code 403. Was hat das zu bedeuten? Was können Sie dagegen tun?",
+            "submitted": {
+              "a": "De „Forbidden“ Antwort beschreibt, dass eine Anfrage vom Server erhalten und verstanden, aber nicht autorisiert wurde, also man nicht die nötigen Rechte besitzt, um auf die angefragte Ressource zugreifen zu dürfen. Durch das Wechseln der Authentifikationsrolle (kein wiederholtes Authentifizieren mit selben Privilegien, sondern mit anderen) oder das Erhalten von weiteren bzw. das Ändern der benötigten Rechte kann der Zugriff ermöglicht werden.",
+              "code": ""
+            },
+            "improved": {
+              "a": "Die „Forbidden“ Antwort beschreibt, dass eine Anfrage vom Server erhalten und verstanden, aber nicht autorisiert wurde, also man nicht die nötigen Rechte besitzt, um auf die angefragte Ressource zugreifen zu dürfen. Durch das Wechseln der Authentifikationsrolle (kein wiederholtes Authentifizieren mit selben Privilegien, sondern mit anderen) oder das Erhalten von weiteren bzw. das Ändern der benötigten Rechte kann der Zugriff ermöglicht werden.",
+              "code": ""
+            }
+          },
+          {
+            "q": "In einer Webanwendung benötigen Sie eine OPTIONS-Anfrage, die die Optionen des Servers vor dem eigentlichen Zugriff erfragen soll. Aus Performanzgründen soll die Abfrage jedoch cacheable sein. Wie könnten Sie dafür eine Lösung angehen?",
+            "submitted": {
+              "a": "Durch das Setzen von „Cache-Control“ im Header einer http-Request/Antwort.",
+              "code": ""
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          }
+        ]
+      },
+      {
+        "title": "1.3. HTML-Literatur lesen und Fragen beantworten",
+        "description":{
+            "text":"Arbeiten Sie ein HTML-Tutorial durch (<a target='_blank' href='https://www.w3schools.com/html/default.asp'>W3 Schools</a> oder <a target='_blank' href='https://wiki.selfhtml.org/wiki/HTML/Tutorials/HTML-Einstieg'>selfhtml</a>) und beantworten Sie dazu folgende Fragen:",
+            "wireframe":""
+        },
+        "qAndAs": [
+          {
+            "q": "Was ist HTML?",
+            "submitted": {
+              "a": "HTML ist die Abkürzung für Hypertext Markup Language. Es beschreibt eine unstrukturierte Skriptsprache, die auf tags (Markern) basiert und zur Gestaltung des Aufbaus einer Webseite genutzt wird.",
+              "code": ""
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          },
+          {
+            "q": "Wie kann man eine geschachtelte geordnete Liste der Schachtelungstiefe 3 erzeugen?",
+            "submitted": {
+              "a": "",
+              "code": "./aufgaben/aufgabe1/aufgabe1_3_2.html"
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          },
+          {
+            "q": "Wie ist eine HTML-Tabelle aufgebaut?",
+            "submitted": {
+              "a": "Eine HTML-Tabelle besteht aus den Tags <table> (definiert die Nutzung eines Tables), <tr> (definiert die Tabellen Zeile), <th> (definiert Kopfspalten) und <td> (definiert table data bzw. Spalten und Spaltenwerte).",
+              "code": ""
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          },
+          {
+            "q": "Welche Konventionen sollte man bei Pfaden und Dateinamen beachten?",
+            "submitted": {
+              "a": "Wo es möglich ist, sollten relative Dateipfade verwendet werden, damit man sichergeht, dass das Programm nicht nur auf der lokalen Entwicklungsmaschine durch das Benutzen von absoluten Pfaden, funktioniert. Des Weiteren sollten Dateinamen tendenziell klein geschriebene werden, da man dadurch Probleme mit Groß- und Kleinschreibungssensitiven Systemen vermeidet. ",
+              "code": ""
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          },
+          {
+            "q": "Wie baut man in HTML ein Menü?",
+            "submitted": {
+              "a": "Menüs werden durch das Verwenden des Navigations-Tags (<nav>),von ungeordneten Listen (<ul>), sowie Anchor Tags (<a href=““>) realisiert. Href kann auf eine id, oder http Adressen referenzieren.",
+              "code": "./aufgaben/aufgabe1/aufgabe1_3_5.html"
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          }
+          ,{
+            "q": "Welche Attribute sollte man bei Bildern wie verwenden?",
+            "submitted": {
+              "a": "Bei Bildern (<img>) sollte man die Attribute src, zum Setzen einer Quelle, alt, zum Setzen eines bei nicht Darstellbarkeit des Bildes alternativ darzustellenden Textes, sowie width zum Setzen der Breite und height zum Sezten der Höhe eines Bildes, mindestens verwenden. <img src='' alt='Alternativer Text' height='' width=''>",
+              "code": ""
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          }
+        ]
+      },
+      {
+        "title": "1.4. HTML Wireframe",
+        "description":{
+            "text":"Gegeben ist folgendes HTML-Wireframe. Mit welchem HTML-Code (ohne CSS, nur mit HTML-Tags) kann man diesen Wireframe exakt nachbilden? Die beiden Bilder finden Sie z.B. unter <a target='_blank' href='https://kaul.inf.h-brs.de/we/assets/img/tbl.jpg'>TBL</a> und <a target='_blank' href='https://kaul.inf.h-brs.de/we/assets/img/eich.jpg'>Eich</a>.",
+            "wireframe":"https://kaul.inf.h-brs.de/we/assets/img/wireframe01.jpg"
+        },
+        "qAndAs": [
+          {
+            "q": "Geben Sie Ihren HTML-Quellcode in dieses Textfeld ein: ",
+            "submitted": {
+              "a": "",
+              "code": "./aufgaben/aufgabe1/aufgabe1_4.html"
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          }
+        ]
+      },
+      {
+        "title": "",
+        "description":{
+            "text":"",
+            "code":""
+        },
+        "qAndAs": [
+          {
+            "q": "",
+            "submitted": {
+              "a": "",
+              "code": ""
+            },
+            "improved": {
+              "a": "",
+              "code": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "css1": {
+      "tasks":[
+        {
+            "title": "2.1. CSS Selektoren und CSS Farben",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Berechnen Sie die Spezifität folgender CSS-Selektoren: \n 1. div div div:focus  .inner \n 2. h1 + div.main \n 3. div a:link[href*='h-brs'] \n 4. nav > a:hover::before \n 5. ul#primary-nav li.active",
+                "submitted": {
+                  "a": "div div div:focus .inner = 023 \n h1 + div.main = 012 \n div a:link[href*='h-brs'] = 022 \n nav > a:hover::before = 013 \n ul#primary-nav li.active = 112",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Rechnen Sie folgende RGB-Werte in HSL-Werte um: \n 1. #ffffff \n 2. #000 \n 3. #ab0978 \n 4. rgb(127,255,33) \n 5. rgba(255,127,33,0.8)",
+                "submitted": {
+                  "a": "#ffffff => 255 255 255 RGB => 0° 0.0% 100% HSL \n #000 = > 0 0 0 RGB => 0° 0.0% 0.0% \n #ab0978 => 171 9 120 RGB => 319° 90% 35.3% HSL \n rgb(127,255,33) => #7FFF21 HEX =>95° 100.0% 56% HSL \n rgba(255,127,33,0.8) => #ff7e20 HEX => rgb(255 126 32) =>25° 100.0% 56%  0.8 HSL",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "2.2. CSS Positionierung",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Schauen Sie sich folgendes Video  https://www.youtube.com/watch?v=PE3POxjDspo an und bauen Sie das dynamische Verhalten exakt nach (nur mit HTML und CSS, ohne JavaScript): ",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe2/uebung2_2_1.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schauen Sie sich folgendes https://www.youtube.com/watch?v=HVmnv3k4__E Video an und bauen Sie das dynamische Verhalten exakt nach (nur mit HTML und CSS, ohne JavaScript). Das verwendete Bild finden Sie unter der Adresse https://upload.wikimedia.org/wikipedia/commons/a/a4/Hochschule_Bonn-Rhein-Sieg_Wolfgang_G%C3%B6ddertz_Induktion.jpg",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe2/uebung2_2_2.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "2.3. Wireframe with HTML and CSS",
+            "description":{
+                "text":"Gegeben ist folgendes HTML-Wireframe. Hinweis zu den Farben: Firefox DevTools anthalten eine Pipette namens „Eyedropper“, mit der man die Farben aus einer Webseite auslesen kann. Die grünliche Farbe im Rahmen des Wireframes ist demnach #b2d6d1, Hinweis zu den Schriften (Fonts): Die größte Sammlung an „kostenlosen“ Web-Schriften stammt von Google und ist unter Google Fonts zu finden. Wer lieber aus dem Vorrat an vorhanden Schriften auswählt, wird unter websichere Schriften fündig.",
+                "wireframe":"https://kaul.inf.h-brs.de/we/assets/img/survey.png"
+            },
+            "qAndAs": [
+              {
+                "q": " Frage: Mit welchem HTML- und CSS-Code kann man diesen Wireframe exakt nachbilden? Schreiben Sie Ihren CSS-Code direkt in die HTML-Datei. Geben Sie Ihren HTML- und CSS-Quellcode zusammen in dieses Textfeld ein: ",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe2/uebung2_3.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Was war in der Lösung dieser Aufgabe die größte Schwierigkeit und wie haben Sie diese gelöst?",
+                "submitted": {
+                  "a": "Das richtige Styling des Formulars zu finden.",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          }
+
+      ]
+  },
+  "css2": {
+    "tasks":[
+        {
+            "title": "3.1. Responsiv mit Flexbox Desktop-First",
+            "description":{
+                "text":"Spielen Sie zunächst das Flexbox Froggy-Spiel (http://flexboxfroggy.com/#de), um Flexbox zu lernen.",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Implementieren Sie dann ausschließlich mit HTML und CSS Flexbox folgendes responsive Webdesign nach der Desktop-First-Strategie!",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe3/aufgabe3_1.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "3.2. Responsiv mit Grid Mobile-First",
+            "description":{
+                "text":"Spielen Sie zunächst das Grid Garden -Spiel (https://cssgridgarden.com/#de), um Grid Layout zu lernen.",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Implementieren Sie dann das gleiche responsive Webdesign wie in Aufgabe 3.1 allerdings mit Grid und der Mobile-First-Strategie! Vermeiden Sie diesmal außerdem das Erscheinen von Scrollbars.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe3/aufgabe3_2.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "3.3. Responsiv mit Grid",
+            "description":{
+                "text":"Für das Bild dürfen Sie die URL <a href='https://kaul.inf.h-brs.de/we/assets/img/landing-img.png'>Link zum Bild</a> verwenden. ",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Implementieren Sie folgende Landing Page responsiv mit Grid Layout. Vermeiden Sie außerdem das Erscheinen von Scrollbars so weit wie möglich.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe3/aufgabe3_3.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          }
+      ]
+  },
+  "JavaScript": {
+    "tasks":[
+        {
+            "title": "4.1. Funktionen",
+            "description":{
+                "text":"Schreiben Sie folgende Funktionen in JavaScript:",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Schreiben Sie eine Funktion identity(), die ein Argument als Parameter entgegen nimmt und dieses als Ergebnis zurück gibt.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe4/uebung4_1_1.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine Funktion identity_function(), die ein Argument als Parameter entgegen nimmt und eine Funktion zurück gibt, die dieses Argument zurück gibt.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe4/uebung4_1_2.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie zwei binäre Funktionen add und mul, die Summe und Produkt berechnen.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe4/uebung4_1_3.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine Addier-Funktion addf(), so dass addf(x)(y) genau x + y zurück gibt. (Es haben also zwei Funktionsaufrufe zu erfolgen. addf(x) liefert eine Funktion, die auf y angewandt wird.)",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe4/uebung4_1_4.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine Funktion applyf(), die aus einer binären Funktion wie add(x,y) eine Funktion addfberechnet, die mit zwei Aufrufen das gleiche Ergebnis liefert, z.B. addf = applyf(add); addf(x)(y) soll add(x,y) liefern. Entsprechend applyf(mul)(5)(6) soll 30 liefern, wenn mul die binäre Multiplikation ist.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe4/uebung4_1_5.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+
+            ]
+          },
+          {
+            "title": "4.2. Objekte",
+            "description":{
+                "text":"Schreiben Sie die Prototypen Person und Auto in JavaScript, so dass jede Person weiß, welche Autos sie besitzt. Schreiben Sie eine Funktion conflict(), die feststellt, ob ein Auto von mehr als einer Person besessen wird.",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Geben Sie hier Ihren JavaScript-Code inkl. Tests ein.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe4/uebung4_2.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "4.3. Fibonacci",
+            "description":{
+                "text":"Schreiben Sie im Browser die Fibonacci-Funktion in JavaScript und geben Sie die ersten 2000 Fibonacci-Zahlen 0,1,1,2,3,5,8,13,... auf der Konsole mit console.log() aus. Achten Sie auf Performanz: Berechnen Sie jeden Fibonacci-Wert nur einmal. Speichern Sie zu diesem Zweck jede bereits berechnete Fibonacci-Zahl in einer Tabelle.",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe4/uebung4_3_1.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Was ist die größte Fibonacci-Zahl, die sich noch als Integer sicher speichern lässt (Number.MAX_SAFE_INTEGER)? Die wievielte Fibonacci-Zahl in der Fibonacci-Folge ist das? ",
+                "submitted": {
+                  "a": "",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Was ist die größte Fibonacci-Zahl, die sich noch als Number speichern lässt (Number.MAX_VALUE)? Die wievielte Fibonacci-Zahl in der Fibonacci-Folge ist das (d.h. welche Stelle in der Fibonacci-Folge)? ",
+                "submitted": {
+                  "a": "",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Wechseln Sie zu BigInt, um alle 2000 Fibonacci-Zahlen korrekt anzuzeigen. Geben Sie hier HTML- und JavaScript-Code zusammen ein:",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe4/uebung4_3_4.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Optional: Was ist die größte Fibonacci-Zahl, die Sie mit BigInt korrekt berechnet haben? An welcher Stelle in der Fibonacci-Folge steht diese?",
+                "submitted": {
+                  "a": "Die zweitausendste Zahl in der Fibonacchi Folge, ist \n422469633339230487870672560234148278257985284025068109801028013731430858437013 \n 070722412359963914151108844608753890960360764019471164359602927198331259873732\n6253555802606991585915229492453904998722256795316982874482472992263901833716778\n0606070116154978867198798583114688708762645973690867228840\n236544222952433479644801395153495629720876526\n5606952980649984197744872015561280266540455 \n 4171717881930324025204312082516817125",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "4.4. Topsort",
+            "description":{
+                "text":"n jedem Projekt fallen Aufgaben (Tasks) an. Zwischen den Aufgaben gibt es paarweise Abhängigkeiten. \n Z.B. kann Task2 von Task1 abhängen, d.h. erst muss Task1 fertig sein, bevor Task2 starten kann, weil es dessen Ergebnisse benötigt. \n Tasks können auch unabhängig voneinander sein und parallel ablaufen. \n In JavaScript können Sie die Abhängigkeiten in Arrays codieren, z.B. kann man bei [ ['schlafen', 'studieren'], ['essen', 'studieren'], ['studieren', 'prüfen'] ] nicht prüfen, ohne vorher gegessen zu haben. \n Transitive Abhängigkeiten müssen also berücksichtigt werden. \n Schreiben Sie in JavaScript eine Funktion topsort(), die eine topologische Sortierung berechnet. \n Topologische Sortierung ist eine Form von Sortierung. \n Sie kennen die Funktion Array.prototype.sort() und wissen, was als Ergebnis erwartet wird, nämlich eine sortiere Liste. Genauso ist das hier. \n Die Funktion topsort() soll eine sortierte Liste ausgeben, die keine der eingegebenen Abhängigkeiten verletzt. \n Achten Sie auf Performanz. \n Berechnen Sie die topologische Sortierung in linearer Zeit (Average Case).",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe4/uebung4_4_1.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Testen Sie Ihren JavaScript-Code. Verwenden Sie für Ihre Tests die Funktion console.assert. Geben Sie hier Ihre Tests ein:",
+                "submitted": {
+                  "a": "Not Submitted",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          }
+      ]
+  },
+  "DOM": {
+    "tasks":[
+        {
+            "title": "5.1. Performanzmessungen von DOM-Operationen",
+            "description":{
+                "text":"Implementieren Sie Performanzmessungen zum Vergleich von innerHTML, innerText, textContent und outerHTML selbstständig in JavaScript durch Nutzung der DOM API. Geben Sie die Messergebnisse als Tabelle aus. Verwenden Sie die eingebauten Zeitmess-Funktionen performance.now (), siehe auch When-milliseconds-are-not-enough-performance-now. Suchen Sie eine möglichst kurze und elegante Lösung. Dabei ist zu beachten, dass Browser, um potenzielle Sicherheitsbedrohungen wie Spectre oder Meltdown zu minimieren, den zurückgegebenen Wert normalerweise um einen bestimmten Betrag runden. Dies führt zu einer gewissen Ungenauigkeit. Beispielsweise rundet Firefox die zurückgegebene Zeit in Schritten von 1 Millisekunde. Diese Zwangsrundung kann man jedoch wiederum abschalten mittels Firefox setting privacy.reduceTimerPrecision, siehe How to get microsecond timings in JavaScript since Spectre and Meltdown.",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe5/uebung5_1.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+        {
+            "title": "5.2. Rednerliste mit Zeitmessung",
+            "description":{
+                "text":"Implementieren Sie die interaktive Anwendung 'Rednerliste mit Zeitmessung' selbstständig in JavaScript durch Nutzung der DOM API und der Timer-Funktionen. Neue Redner sollen auf Knopfdruck hinzugefügt werden können. Deren Uhr wird dann sofort automatisch gestartet und alle anderen Uhren angehalten. Bei jedem Redner soll die individuelle, gemessene Redezeit sekundengenau angezeigt werden. Für jeden Redner soll es einen eigenen Start-/Stopp-Button geben. Es soll immer nur eine Uhr laufen. Angezeigt werden sollen die bisherigen Summenzeiten aller Redebeiträge der betreffenden Person. Suchen Sie eine möglichst kurze und elegante Lösung. Achten Sie gleichzeitig auf gute Usability: z.B. wenn die Eingabe mit einem Return beendet wird, soll der Button-Click nicht mehr erforderlich sein, usw.",
+                "wireframe":"https://kaul.inf.h-brs.de/we/assets/img/Rednerliste.png"
+            },
+            "qAndAs": [
+              {
+                "q": "",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe5/uebung5_2.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "5.3. TopSort als WebApp ",
+            "description":{
+                "text":"Schreiben Sie eine Web-Oberfläche, in der man beliebige Beziehungen (Vorrang-Relationen) eingeben kann, für die dann die topologische Sortierung per Knopfdruck auf der Webseite ausgegeben wird. Für die Eingabe können Sie HTML5-Eingabefelder oder contentEditable verwenden.",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe5/uebung5_3.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          }
+    ]
+  }, 
+  "ECMAScript": {
+    "tasks":[
+        {
+            "title": "6.1. Klammerpaare",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Schreiben Sie eine Webseite, in die man eine Zeichenkette mit beliebigen Buchstaben, Zahlen und Sonderzeichen eingeben kann, die beliebig geschachtelte Klammern [...], (...) und {...} enthält, so dass sofort geprüft wird, ob alle Klammerpaare korrekt geschachtelt sind. Das Eingabefeld der Zeichenkette soll rot gefärbt werden, wenn es ein Klammerpaar gibt, das falsch geschachtelt ist.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe6/uebung6_1.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Bonus: Verallgemeinern Sie Ihren Algorithmus, so dass man Klammerpaare als Parameter frei definieren kann. Es müssen also nicht [...], (...) und {...} sein, sondern es können auch andere Zeichen gewählt werden.",
+                "submitted": {
+                  "a": "Not submitted",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "6.2. Topologische Iterierbarkeit",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "",
+                "submitted": {
+                  "a": "Not properly working code./aufgaben/aufgabe6/uebung6_2.html",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "6.3. Topologischer Generator",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "",
+                "submitted": {
+                  "a": "Not submitted",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "6.4. Proxy",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "",
+                "submitted": {
+                  "a": "Not submitted",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "6.5. DeepCopy",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "",
+                "submitted": {
+                  "a": "Not submitted",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          }
+    ]
+  },
+  "Funktional": {
+    "tasks":[
+        {
+            "title": "Aufgabe 7.1: Funktionen in JavaScript",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Schreiben Sie eine Funktion identity_function(), die ein Argument als Parameter entgegennimmt und eine Funktion zurückgibt, die dieses Argument zurückgibt.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_1.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine Addier-Funktion addf(), so dass addf(x)(y) genau x + y zurück gibt. (Es haben also zwei Funktionsaufrufe zu erfolgen. addf(x) liefert eine Funktion, die auf y angewandt wird.)",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_2.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine Funktion applyf(), die aus einer binären Funktion wie add(x,y) eine Funktion addfberechnet, die mit zwei Aufrufen das gleiche Ergebnis liefert, z.B. addf = applyf(add); addf(x)(y) soll add(x,y) liefern. Entsprechend applyf(mul)(5)(6) soll 30 liefern, wenn mul die binäre Multiplikation ist.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_3.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine Funktion curry() (von Currying), die eine binäre Funktion und ein Argument nimmt, um daraus eine Funktion zu erzeugen, die ein zweites Argument entgegen nimmt, z.B. add3 = curry(add, 3);add3(4) ergibt 7. curry(mul, 5)(6) ergibt 30.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_4.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Erzeugen Sie die inc-Funktion mit Hilfe einer der Funktionen addf, applyf und curry aus den letzten Aufgaben, ohne die Funktion inc() selbst zu implementieren. (inc(x) soll immer x + 1 ergeben und lässt sich natürlich auch direkt implementieren. Das ist aber hier nicht die Aufgabe.) Vielleicht schaffen Sie es auch, drei Varianten der inc()-Implementierung zu schreiben?",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_5.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine Funktion methodize(), die eine binäre Funktion (z.B. add, mul) in eine unäre Methode verwandelt. Nach Number.prototype.add = methodize(add); soll (3).add(4) genau 7 ergeben.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_6.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine Funktion demethodize(), die eine unäre Methode (z.B. add, mul) in eine binäre Funktion umwandelt. demethodize(Number.prototype.add)(5, 6) soll 11 ergeben.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_7.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine Funktion twice(), die eine binäre Funktion in eine unäre Funktion umwandelt, die den einen Parameter zweimal weiter reicht. Z.B. var double = twice(add); double(11) soll 22 ergeben; var square = twice(mul); square(11) soll mul(11,11) === 121 ergeben.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_8.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine Funktion composeu(), die zwei unäre Funktionen in eine einzelne unäre Funktion transformiert, die beide nacheinander aufruft, z.B. soll composeu(double, square)(3) genau 36 ergeben.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_9.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine Funktion composeb(), die zwei binäre Funktionen in eine einzelne Funktion transformiert, die beide nacheinander aufruft, z.B. composeb(add, mul)(2, 3, 5) soll 25 ergeben.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_10.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine Funktion once(), die einer anderen Funktion nur einmal erlaubt, aufgerufen zu werden, z.B. add_once = once(add); add_once(3, 4) soll beim ersten Mal 7 ergeben, beim zweiten Mal soll jedoch add_once(3, 4) einen Fehlerabbruch bewirken.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_11.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine Fabrik-Funktion counterf(), die zwei Funktionen inc() und dec() berechnet, die einen Zähler hoch- und herunterzählen. Z.B. counter = counterf(10); Dann soll counter.inc() 11 und counter.dec() wieder 10 ergeben.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_12.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Schreiben Sie eine rücknehmbare Funktion revocable(), die als Parameter eine Funktion nimmt und diese bei Aufruf ausführt. Sobald die Funktion aber mit revoke() zurück genommen wurde, führt ein erneuter Aufruf zu einem Fehler. Z.B. temp = revocable(alert); temp.invoke(7); // führt zu alert(7); temp.revoke(); temp.invoke(8); // Fehlerabbruch!",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_13.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Implementieren Sie ein 'Array Wrapper'-Objekt mit den Methoden get, store und append, so dass ein Angreifer keinen Zugriff auf das innere, private Array hat. my_vector = vector(); my_vector.append(7); my_vector.store(1, 8); my_vector.get(0) // 7 my_vector.get(1) // 8 ",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe7/uebung7_1_14.js"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "7.2. Textanalyse mit filter-map-reduce",
+            "description":{
+                "text":"Schreiben Sie in JavaScript eine Textanalyse. Ermitteln Sie die häufigsten Begriffe im Text Plagiatsresolution. Filtern Sie dabei alle Stoppworte und HTML-Tags. Reduzieren Sie das Ergebnis auf die 3 häufigsten Begriffe. Hinweis: Eine größere Stoppwort-Liste finden Sie auch unter github.com/stopwords-iso/stopwords-de.",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "",
+                "submitted": {
+                  "a": "Not submitted",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          }
+    ]
+  },
+  "Async":{
+    "tasks":[
+      {
+        "title": "8.1. Promises",
+        "description":{
+          "text":"Erstellen Sie auf Ihrem Server www2.inf.h-brs.de (oder localhost) zwei Text-Dateien A.txt und B.txt mit ungefähr gleich vielen Zeilen. Laden Sie mit der fetch-API parallel beide Text-Dateien vom Server. Geben Sie auf einer Webseite den Inhalt beider Dateien zeilenweise aus, wobei der Anfang der Zeile aus A.txt und das Ende aus B.txt stammen soll. Die beiden Dateien sollen also zeilenweise konkateniert werden. Erzielen Sie max. Geschwindigkeit durch maximale Parallelität. Achten Sie gleichzeitig auf Korrektheit. Verwenden Sie dabei ausschließlich die Promise API ohne async / await.",
+          "wireframe":""
+        },
+        "qAndAs":[
+          {
+            "q":"",
+            "submitted":{
+              "a":"",
+              "code":"./aufgaben/aufgabe8/uebung8_1.html"
+            },
+            "improved":{
+              "a":"",
+              "code":""
+            } 
+          }
+        ]
+      },
+      {
+        "title": "8.2. async / await",
+        "description":{
+          "text":"",
+          "wireframe":""
+        },
+        "qAndAs":[
+          {
+            "q":"",
+            "submitted":{
+              "a":"",
+              "code":"./aufgaben/aufgabe8/uebung8_2.html"
+            },
+            "improved":{
+              "a":"",
+              "code":""
+            } 
+          }
+        ]
+      },
+      {
+        "title": "8.3. WWW-Navigator",
+        "description":{
+          "text":"Schreiben Sie einen Navigator für die Fachbegriffe des WWW zu den Oberthemen HTML, CSS und JavaScript. Im Hauptmenü sollen diese 3 Oberthemen zur Auswahl stehen. Im Untermenü soll eine zugehörige Liste von Fachbegriffen zum jeweiligen ausgewählten Oberthema stehen. In der Mitte soll eine Dokumentation zum ausgewählten Fachbegriff erscheinen.",
+          "wireframe":"https://kaul.inf.h-brs.de/we/assets/img/www-navigator.png"
+        },
+        "qAndAs":[
+          {
+            "q":"",
+            "submitted":{
+              "a":"",
+              "code":"./aufgaben/aufgabe8/uebung8_3.html"
+            },
+            "improved":{
+              "a":"",
+              "code":""
+            } 
+          }
+        ]
+      }
+    ]
+  },
+  "SVG": {
+    "tasks":[
+        {
+            "title": "9.1. SVG Grafik von Hand erstellen",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Codieren Sie eine HTML-Datei mit Inline SVG, so dass sich folgendes Aussehen ergibt: Fügen Sie als Hover-Effekt eine CSS-Animation hinzu, die die Größe der SVG-Grafik verdoppelt, wenn man mit dem Cursor über die Grafik geht.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe9/uebung9_1.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+            },
+              {
+                "title": "9.2. Statistik-Balkendiagramm in SVG",
+                "description":{
+                    "text":"",
+                    "wireframe":""
+                },
+                "qAndAs": [
+                  {
+                    "q": "Implementieren Sie ein eigenes Balkendiagramm mit HTML, Inline SVG, CSS und JavaScript. Geben Sie die Daten für das Balkendiagramm im JSON-Format vor. Nehmen Sie als Beispieldaten die COVID-19: Fallzahlen in Deutschland. Animieren Sie die Grafik (siehe z.B. Highchart Bar Chart).",
+                    "submitted": {
+                      "a": "",
+                      "code": "./aufgaben/aufgabe9/uebung9_2.html"
+                    },
+                    "improved": {
+                      "a": "",
+                      "code": ""
+                    }
+                  }
+                ]
+              },
+          {
+            "title": "9.3. Interaktive SVG Grafik",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Implementieren Sie das Spiel Tic-Tac-Toe als HTML-Datei mit Inline SVG, CSS und JavaScript. ",
+                "submitted": {
+                  "a": "Not submitted",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          }
+    ]
+  },
+  "TypeScript": {
+    "tasks":[
+        {
+            "title": "10.1. Static classes in TypeScript",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Gibt es in TypeScript statische Klassen? Erläutern Sie den Unterschied von TypeScript zu anderen objekt-orientierten, statisch typisierten Programmiersprachen wie Java und C#.",
+                "submitted": {
+                  "a": "Statische Klassen sind nur teilweise in TypeScript implementiert. Es gibt statische 'Variablen' und Methoden, aber keine vollkommen statischen Klassen. Um ein noch ähnlicheres Verhalten einer Klasse gegenüber einer C# Klasse zu gewährleisten kann der Konstruktor der Klasse auf private gestellt werden was die Instanziierung der Klasse von außerhalb nicht mehr ermöglicht.",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "10.2. Fehler finden mit TypeScript",
+            "description":{
+                "text":"Gegeben sei folgendes fehlerbehaftete JavaScript-Programm. Ergänzen Sie dieses um möglichst viele Typisierungen und übersetzen Sie es in ein TypeScript-Programm.",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Was ist der Fehler in dem gegebenen JavaScript-Code?",
+                "submitted": {
+                  "a": "Das letzte console.log, was (x === y) + (y === x) berechnet gibt 2 zurück, obwohl es sich um die Addition von true und false handelt, was eigentlich 1 ergeben sollte.",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Welche Fehler meldet TypeScript?",
+                "submitted": {
+                  "a": "",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              },
+              {
+                "q": "Geben Sie weitere Beispiele an, wie TypeScript bei der Fehlersuche helfen kann:",
+                "submitted": {
+                  "a": "",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "10.3. TypeScript auf Deno",
+            "description":{
+                "text":"Auf Deno ist TypeScript ohne Übersetzung direkt ablauffähig. Deno ist also die Runtime Engine für TypeScript.",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Schreiben Sie in TypeScript möglichst umfangreich statisch typisiert ein auf Deno ablauffähiges Programm server.ts, \n das Sie mit deno run --allow-net server.ts starten können, \n das die COVID-19-Fallzahlen in Deutschland einliest, Minimum, Maximum, Durchschnitt und Summe berechnet und diese auf einer Webseite ausgibt. \n Ein Beispiel-Programm zu server.ts finden Sie im Deno-Manual unter Making an HTTP request",
+                "submitted": {
+                  "a": "",
+                  "nocodevis":true,
+                  "code": "./aufgaben/aufgabe10/"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          }
+    ]
+  },
+  "Vue": {
+    "tasks":[
+        {
+            "title": "Aufgabe 11.1: Komponente in Vue.js",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Schreiben Sie eine Vue.js Single File Component mit einem Text-Eingabefeld und 3 Ausgabefeldern, \n in denen man während des Tippens sehen kann, (a) wie viele Buchstaben (b) wie viele Leerzeichen und (c) wie viele Worte man in das Text-Eingabefeld bereits eingegeben hat. \n Betten Sie Ihre Komponente in eine Webseite zweimal ein und testen Sie, ob beide Komponenten unabhängig voneinander sind.",
+                "submitted": {
+                  "a": "",
+                  
+                  "code": "./aufgaben/aufgabe11/uebung11_1/document.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "Aufgabe 11.2: Menü-Komponente",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Schreiben Sie eine möglichst flexible Vue.js Single File Component für Menüs und wenden Sie diese in derselben Webseite zweimal an, einmal horizontal, das andere Mal vertikal.",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe11/uebung11_2/uebung11_2.html"
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "Aufgabe 11.3: Vue.js WWW-Navigator",
+            "description":{
+                "text":"Schreiben Sie Ihren WWW-Navigator als SPA in Vue.js mit Vue Router und/oder mit Vuex als State Manager. ",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Dokumentieren Sie Ihren Entscheidungsprozess: In welche Komponenten wollen Sie Ihre App zerlegen? Wie soll das State Management implementiert werden?",
+                "submitted": {
+                  "a": "Das Pages Directory beinhaltet alle Seiten: Home, About, Tasks, Contact, PageNotFound. Das Components Directory beinhaltet alle Komponenten: Hero, MenuBar, FooterBar, Link, Task.  Das Layouts directory beinhaltet Layouts, die den das Grundlayout der Seite festlegen, in die dann content durch einen Slot eingesetzt werden kann. Credit des Templates: https://github.com/chrisvfritz/vue-2.0-simple-routing-example",
+                  "code": "./aufgaben/aufgabe11/uebung11_3/",
+                  "nocodevis":true
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          }
+    ]
+  },
+  "PHP": {
+    "tasks":[
+        {
+            "title": "12.1. Registrierung mit PHP",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Erstellen Sie mit PHP 5 auf www2.inf.h-brs.de ein Registrierungsformular. Speichern Sie die eingegebenen Daten persistent in einer Datei auf www2.inf.h-brs.de. Schreiben Sie Ihre PHP-Scripte so, dass es zu keinen Nebenläufigkeitsartefakten (z.B. Lost Update) kommen kann, egal wie viele Nutzer sich gleichzeitig registrieren. ",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe12/uebung12_1_and_2/project/register.php",
+                  "nocoderender":true
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "Aufgabe 12.2: Login mit PHP",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Schreiben Sie eine sichere PHP-Lösung für Login, das die persistierten Registrierungsdaten aus der letzten Aufgabe nutzt. ",
+                "submitted": {
+                  "a": "",
+                  "code": "./aufgaben/aufgabe12/uebung12_1_and_2/project/login.php",
+                  "nocoderender":true
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "Aufgabe 12.3: WWW-Navigator zum Content-Editor ausbauen ",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Bauen Sie Ihren WWW-Navigator zum Content-Editor aus, mit dem Sie weitere Inhalte hinzu fügen können, die persistent auf dem Server mittels PHP gespeichert werden. Schreiben Sie Ihre PHP-Scripte so, dass es zu keinen Nebenläufigkeitsartefakten kommen kann, egal wie viele Nutzer gleichzeitig editieren und speichern. Speichern Sie die Inhalte Ihres WWW-Navigators auf dem Server www2.inf.h-brs.de. Erweitern Sie Ihren WWW-Navigator um eine Edit-Funktionalität, so dass Inhalte editiert und ergänzt werden können. Vermeiden Sie die Lost Update-Anomalie. Schützen Sie Ihre Inhalte mit einem Login. ",
+                "submitted": {
+                  "a": "Not submitted",
+                  "code": "",
+                  "nocoderender":true
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          }
+    ]
+  },
+  "Security": {
+    "tasks":[
+        {
+            "title": "13.1. Sicherer ArrayWrapper",
+            "description":{
+                "text":"In der Vorlesung wurde ein ArrayWrapper Exploit gezeigt. Analysieren Sie die Ursache dieses Exploits. Entwickeln Sie ein Sicherheitskonzept und eine ArrayWrapper-Lösung, die gegen diesen Exploit gewappnet ist.",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "",
+                "submitted": {
+                  "a": "",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "13.2. WebGoat Injection",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Installieren Sie WebGoat. Starten Sie das Docker Image mit WebGoat. \n Öffnen Sie die Landing Page von WebGoat. \n Lösen Sie die Aufgaben in (A1) Injection, SQL Injection (Intro).",
+                "submitted": {
+                  "a": "lesson 2: Look at the example table. \n Try to retrieve the department of the employee Bob Franco. \n Note that you have been granted full administrator privileges in this assignment and can access all data without authentication.\n Answer: SELECT department FROM employees WHERE first_name='Bob' AND last_name='Franco'; \n lesson 3: Try to change the department of Tobi Barnett to 'Sales'. Note that you have been granted full administrator privileges in this assignment and can access all data without authentication. \n Answer: UPDATE employees SET department = 'Sales' WHERE first_name='Tobi' AND last_name='Barnett'; \n lesson 4: Now try to modify the schema by adding the column 'phone' (varchar(20)) to the table 'employees'. : \n Answer: ALTER TABLE employees ADD phone VARCHAR(20); \n lesson 5: Try to grant rights to the table grant_rights to user unauthorized_user: \n Answer: GRANT SELECT ON grant_rights TO unauthorized_user; \n lesson 9: Try using the form below to retrieve all the users from the users table. \n You should not need to know any specific user name to get the complete list. \n Answer:SELECT * FROM user_data WHERE first_name = 'John' and last_name = 'Smith' or '1' = '1'; \n lesson 10: Using the two Input Fields below, try to retrieve all the data from the users table. \n Answer: SELECT * From user_data WHERE Login_Count = 1 and userid= 1 OR 1 = 1 \n lesson 12: Use the form below and try to retrieve all employee data from the employees table. You should not need to know any specific names or TANs to get the information you need. \n You already found out that the query performing your request looks like this:  \n Answer: “SELECT * FROM employees WHERE last_name = '“ + A + “' AND auth_tan = '“ + 'OR '1'= 1 -- ; + “'“; \n lesson 13: You just found out that Tobi and Bob both seem to earn more money than you! \n Of course you cannot leave it at that. \n Better go and change your own salary so you are earning the most! \n Answer: '; UPDATE employees SET salary= 1+(SELECT MAX(salary) FROM employees) WHERE first_name= 'John' AND last_name='Smith' --; \n lesson 14: Now you are the top earner in your company. \n But do you see that?  \n There seems to be a access_log table, where all your actions have been logged to! \n Better go and delete it completely before anyone notices. \n Answer: '; DROP TABLE access_log --;",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "13.3. WebGoat XSS",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+              {
+                "q": "Installieren Sie WebGoat. Starten Sie das Docker Image mit WebGoat. Öffnen Sie die Landing Page von WebGoat. \n Lösen Sie die Aufgaben in (A7) Cross-Site Scripting (XSS), Cross Site Scripting.",
+                "submitted": {
+                  "a": "lesson 2: Were the cookies the same on each tab? \n Answers: alert(document.cookie); Yes \n lesson 7:  The goal of the assignment is to identify which field is susceptible to XSS. \n It is always a good practice to validate all input on the server-side. \n XSS can occur when unvalidated user input gets used in an HTTP response. \n In a reflected XSS attack, an attacker can craft a URL with the attack script and post it to another website, email it, or otherwise get a victim to click on it. \n An easy way to find out if a field is vulnerable to an XSS attack is to use the alert() or console.log() methods. \n Use one of them to find out which field is vulnerable. \n Answers:  Input of the enter your credit card number field: <script>alert()</script> \n lesson 10:  OM-Based XSS can usually be found by looking for the route configurations in the client-side code. \n Look for a route that takes inputs that are being 'reflected' to the page. \n For this example, you will want to look for some 'test' code in the route handlers (WebGoat uses backbone as its primary JavaScript library). \n Sometimes, test code gets left in production (and often times test code is very simple and lacks security or any quality controls!). \n Your objective is to find the route and exploit it.\n  First though​ what is the base route? \n As an example, look at the URL for this lesson  it should look something like /WebGoat/start.mvc#lesson/CrossSiteScripting.lesson/9.\n  The 'base route' in this case is: start.mvc#lesson/ The CrossSiteScripting.lesson/9 after that are parameters that are processed by the JavaScript route handler. \n So, what is the route for the test code that stayed in the app during production? \n To answer this question, you have to check the JavaScript source. \n Answer: start.mvc#test  \n lesson 11: Answer: http://localhost:8080/WebGoat/start.mvc#test/<script>Ewebgoat.customjs.phoneHome()<%2Fscript> Response: phone home said {“lessonCompleted“:true,“feedback“:“Congratulations. You have successfully completed the assignment.“,“output“:“phoneHome Response is -1834366160“,“assignment“:“DOMCrossSiteScripting“,“attemptWasMade“:true} \n lesson 12: Q1: Are trusted websites immune to XSS attacks? Solution 4: No because the browser trusts the website if it is acknowledged trusted, then the browser does not know that the script is malicious. \n Q2: When do XSS attacks occur?  \n Solution 3: The data is included in dynamic content that is sent to a web user without being validated for malicious content. Q3: What are Stored XSS attacks? \n Solution 1: The script is permanently stored on the server and the victim gets the malicious script when requesting information from the server. \n  Q4: What are Reflected XSS attacks? Solution 2: They reflect the injected script off the web server. \n That occurs when input sent to the web server is part of the request. \n Q5: Is JavaScript the only way to perform XSS attacks? \n Solution 4: No there are many other ways. Like HTML, Flash or any other type of code that the browser executes.",
+                  "code": ""
+                },
+                "improved": {
+                  "a": "",
+                  "code": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "13.3. WebGoat XSS",
+            "description":{
+                "text":"",
+                "wireframe":""
+            },
+            "qAndAs": [
+                {
+                  "q":"Installieren Sie WebGoat. Starten Sie das Docker Image mit WebGoat. \n Öffnen Sie die Landing Page von WebGoat. Lösen Sie die Aufgaben zu (A8:2013) Request Forgeries, Cross-Site Request Forgeries.",
+                  "submitted": {
+                  "a":"",
+                  "code":"./aufgaben/aufgabe13/uebung13_4_1.html"
+                },
+                "improved": {
+                    "a": "",
+                    "code": ""
+                  }
+                }
+              ]
+            }
+    ]
+  }
+}

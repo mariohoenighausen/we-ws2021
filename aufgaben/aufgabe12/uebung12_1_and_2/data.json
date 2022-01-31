@@ -1,0 +1,24 @@
+{
+    "users": [
+        {
+            "username": "$2y$10$DAvdPfwGTx4b2z\/7EYVL5.sa2Pai.ZnTDYKaG6uNq5KalnqVR1jvS",
+            "email": "$2y$10$LvAERwCe6bhK86aSAVe\/AOO3KSMJIhcMF9mf4zfEbm8XPhnF8IeHq",
+            "password": "$2y$10$4sHktksp989aIdTQevXW.OI31xCi0IDnSFB4Z8IvHTV0er6l4ek.y"
+        },
+        {
+            "username": "$2y$10$kpIH3SEcnaSchKDrTsup4.55l3.rbrj0bxmLeM6E0zZZYaqF4fGs6",
+            "email": "$2y$10$x4\/7Kki95MvXbCBr6ZUWWelJkr2QaBFL3UWa\/uCeHY4XCIgTqGb6m",
+            "password": "$2y$10$UCNfD5EB9rVhqRDwGFQC1ubPmMYkQ1U4xY3ygK3e73NgIq2b988xq"
+        },
+        {
+            "username": "$2y$10$CR\/Lf.VbzHHpr0aOpnUuDuaUMdVO4F8i.njSFFe0SUUrCubTzUlHG",
+            "email": "$2y$10$e75AX878e1HoNJy3Yg\/G8uXUB.Sebdulhsi7\/VpWzgXAU.szrRBoq",
+            "password": "$2y$10$Mi8WM9uh.kyADaC2C2\/wJuSd8TXmaSXiQ7gPYK0jFPUIGMgKAdDO2"
+        },
+        {
+            "username": "$2y$10$q\/jtY0hDiJtgiI3ccUaZ0.tRrnJxMj40lHqvsWN0Tnxdf531xPfrO",
+            "email": "$2y$10$.h\/7ygEbgWummFFTYUmwW.uIj.te.asp\/v1KPURBAf474v4\/HTvGy",
+            "password": "$2y$10$SgmZmpLao7DAMcQiatkx0ecA4v2gAsP4p6W2y5iA\/T6FgKFNdodp."
+        }
+    ]
+}

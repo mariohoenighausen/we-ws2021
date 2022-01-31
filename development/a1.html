@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    #how-to {
+      /*transform: skew(27deg,-20deg);
+    text-align: center;*/
+      font-size: 12.5em;
+      margin-top: 0;
+      text-shadow: 0.03em 0.03em #8f7979;
+    }
+
+    body {
+      font-family: Sans-Serif;
+    }
+
+    a:hover {
+      border-bottom: 1px solid black;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      header>nav>ul>li>a {
+        font-size: 20em;
+      }
+
+      #how-to {
+        font-size: 19.5em;
+      }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+      header>nav>ul>li>a {
+        font-size: 7em;
+      }
+
+      #how-to {
+        font-size: 19.5em;
+      }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      header>nav>ul>li>a {
+        font-size: 14em;
+      }
+
+      #how-to {
+        font-size: 14.3em;
+      }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      .example {
+        background: orange;
+      }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+      .example {
+        background: pink;
+      }
+    }
+
+    .overlay {
+      opacity: 0;
+      position: absolute;
+      background-color: rgb(204, 188, 182);
+      height: 100%;
+      width: 100%;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .overlay a {
+      text-decoration: none;
+      color: black;
+      opacity: 1;
+    }
+
+    #test {
+      position: relative;
+      width: 500px;
+    }
+
+    #test:hover .overlay {
+      opacity: .9;
+    }
+
+    #test:hover .overlay>a {
+      opacity: 1;
+    }
+
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- <p id="how-to">Mario </br> Hönighausen </br> WE 2022</p> -->
+  <h1 id="how-to">A1</h1>
+  <a style="text-decoration: none; color: black" href="./how-to.html">Go back</a>
+  <div id="test">
+    <iframe src="../html/aufgaben/aufgabe1/aufgabe1_4.html" frameborder="0"></iframe>
+    <div class="overlay">
+      <button id="myBtn" onclick="openModal('myModal')">Show in modal</button>
+      <a href="../html/aufgaben/aufgabe1/aufgabe1_4.html" target="_blank">Show full page</a>
+    </div>
+  </div>
+
+  <div id="test">
+    <iframe src="../html/aufgaben/aufgabe1/aufgabe1_3_2.html" frameborder="0"></iframe>
+    <div class="overlay">
+      <button id="myBtn2" onclick="openModal('myModal2')">Show in modal</button>
+      <a href="../html/aufgaben/aufgabe1/aufgabe1_3_2.html" target="_blank">Show full page</a>
+    </div>
+  </div>
+
+<div id="test">
+    <iframe src="../html/aufgaben/aufgabe1/aufgabe1_3_5.html" frameborder="0"></iframe>
+    <div class="overlay">
+      <button id="myBtn3" onclick="openModal('myModal3')">Show in modal</button>
+      <a href="../html/aufgaben/aufgabe1/aufgabe1_3_5.html" target="_blank">Show full page</a>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal('myModal')"class="close">&times;</span>
+      <iframe style="width:100%; height:1000px;"src="../html/aufgaben/aufgabe1/aufgabe1_4.html" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <div id="myModal2" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal('myModal2')"class="close">&times;</span>
+      <iframe style="width:100%; height:1000px;"src="../html/aufgaben/aufgabe1/aufgabe1_3_2.html" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <div id="myModal3" class="modal">
+    <div class="modal-content">
+      <span onclick="closeModal('myModal3')"class="close">&times;</span>
+      <iframe style="width:100%; height:1000px;"src="../html/aufgaben/aufgabe1/aufgabe1_3_5.html" frameborder="0"></iframe>
+    </div>
+  </div>
+  <script>
+    // Get the modal
+    //var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    //var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    function openModal(id) {
+      let modal = document.getElementById(id);
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    function closeModal(id) {
+      let modal = document.getElementById(id);
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>

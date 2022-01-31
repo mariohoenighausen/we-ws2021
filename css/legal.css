@@ -1,0 +1,18 @@
+body{
+    display: grid;
+    height:100vh;
+}
+a{
+    color:black;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline; 
+}
+article{
+    display:grid;
+}
+.mit-license-container{
+    display:grid;
+    justify-items: center;
+}

@@ -1,3 +1,3 @@
-# Notes
-## Displaying Tasks
-- iframe/embed vs one html toggleable
+# Web Engineering Semester work
+
+- Author: Mario Hönighausen

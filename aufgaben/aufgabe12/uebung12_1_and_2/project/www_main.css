@@ -1,0 +1,68 @@
+/* TODO: responsivity for different screen sizes  */
+body {
+  height: 100vh;
+  display: grid;
+  /* grid-template-rows:repeat(3,1fr); */
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+body > header {
+  height: 20vh;
+  display: grid;
+  grid-template-columns: 11fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-column: 1/4;
+}
+body > header > button{
+    padding:15px;
+    border-radius: 0;
+
+}
+body > aside.left-aside {
+  grid-column: 1/2;
+}
+body > aside.left-aside > nav > ul {
+    list-style: none;
+}
+body > aside.left-aside > nav > ul > li > a {
+    text-decoration: none;
+    color:black;
+}
+body > main {
+  grid-column: 2/3;
+  display:grid;
+  justify-items: center;
+  /* align-items: center; */
+}
+body > aside.right-aside {
+  grid-column: 3/4;
+}
+body > footer {
+  grid-column: 1/4;
+}
+header > nav > ul#header-ul {
+  list-style: none;
+  display:grid;
+  column-gap: 10px;
+}
+header > nav > ul#header-ul > li {
+  grid-row: 1;
+}
+
+header > nav > ul#header-ul > li > a {
+  text-decoration:none;
+  color:black;
+}
+#edit-modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}

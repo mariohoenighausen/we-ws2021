@@ -1,0 +1,38 @@
+a {
+  text-decoration: none;
+  color: black;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.56);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  padding: 3px;
+}
+@keyframes hov {
+  from {
+    border-color: rgba(255, 255, 255, 0.43);
+  }
+  to {
+    border-color: rgba(92, 3, 3, 0.43);
+  }
+}
+a:hover {
+  animation: hov 1s forwards;
+}
+body {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  /* From https://css.glass */
+  background: rgba(46, 159, 0, 0.76);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(69, 210, 11, 0.43);
+}
+.registration-results {
+  height: 20vh;
+}

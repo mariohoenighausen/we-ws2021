@@ -1,62 +1,52 @@
 <!DOCTYPE html>
 <html lang="de">
-	<head>
-		<title>Mario Hönighausen</title>
-		<!-- meta tags start-->
-		<meta charset="UTF-8">
-		<meta name="description" content="Personal website introduction into Web Engineering">
-		<meta name="keywords" content="HTML5, CSS3, JavaScript">
-		<meta name="author" content="Mario Hönighausen">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- meta tags end-->
-		<!-- links start-->
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/menu.css">
-		<!-- links end-->
-	</head>
-	<body>
-		<!-- Header section start -->
-		<!--  background: rgb(9,9,121);
-background: linear-gradient(141deg, rgba(9,9,121,1) 14%, rgba(0,212,255,1) 49%, rgba(2,0,36,1) 100%);  -->
-<!-- background: rgb(9,9,121);
-		background: radial-gradient(circle, rgba(9,9,121,1) 14%, rgba(0,212,255,1) 41%, rgba(2,0,36,1) 63%);  -->
-		<header>
-			<!--Hero section start-->
-			<section style="display:flex;justify-content: center;"> 
-                <h1>Mario Hönighausen</h1>
-			</section>
-			<!--Hero section end-->
-			<!--Nav section start-->
-			<nav class="top-nav">
-				<ul>
-					<li><a href="https://www2.inf.h-brs.de/~mhoeni2s/index.html">Home</a></li>
-					<li><a href="html/about.html">About</a></li>
-					<li><a href="html/aufgaben.html">Aufgaben</a></li>
-					<li><a href="html/contact.html">Contact</a></li>
-				</ul>
-			</nav>
-			<!--Nav section start-->
-		</header>
-		<!-- Header section end -->
-		<!-- Main section start -->
-		<main>
-			<div style="display:flex; justify-content: center;font-size:30px; align-items: center; text-align: center;">
-				<blockquote style="font-style: italic;">- Quotes are just sets of words that should inspire you to do something </br> which isn't reciting them forever </br> but </br> creating your own stories that are citeable !</blockquote>
-			</div>
-			
-		</main>
-		<!-- Main section end -->
-		<!-- Footer section start -->
-		<footer>
-			<nav class="bottom-nav">
-				<ul>
-					<li><a href="https://www2.inf.h-brs.de/~mhoeni2s/index.html">Home</a></li>
-					<li><a href="html/about.html">About</a></li>
-					<li><a href="html/aufgaben.html">Aufgaben</a></li>
-					<li><a href="html/contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</footer>
-		<!-- Footer section end -->
-	</body>
+<head>
+	<!--meta information start-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website, introduction into Web Engineering, main-page">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <meta name="author" content="Mario Hönighausen">
+	<!--meta information end-->
+
+    <title>We Semesterprojekt</title>
+
+	<!-- style start -->
+	<link rel='stylesheet' href="./css/index.css"></link>
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/legal.css">
+	<!-- style end -->
+
+    <!-- component start -->
+    <script src="./components/heroheading.component.js"></script>
+    <script src="./components/taskmenu.component.js"></script>
+    <script src="./components/taskviewer.component.js"></script>
+    <script src="./components/task_title.component.js"></script>
+    <script src="./components/qanda.component.js"></script>
+    <script src="./components/code.component.js"></script>
+    <script src="./components/modal.component.js"></script>
+    <script src="./components/footerbar.component.js"></script>
+    <script src="./components/copyright.component.js"></script>
+	<!-- component end -->
+
+    
+
+	<script src="./js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <hero-heading></hero-heading>
+        <task-menu menuData='{"links":[{"title":"A1","link":"#html"},{"title":"A2","link":"#css1"},{"title":"A3","link":"#css2"},{"title":"A4","link":"#JavaScript"},{"title":"A5","link":"#DOM"},{"title":"A6","link":"#ECMAScript"},{"title":"A7","link":"#Funktional"},{"title":"A8","link":"#Async"},{"title":"A9","link":"#SVG"},{"title":"A10","link":"#TypeScript"},{"title":"A11","link":"#Vue"},{"title":"A12","link":"#PHP"},{"title":"A13","link":"#Security"}]}'></task-menu>
+    </header>
+    <main>
+       <!-- Task-viewer content will get inserted via the taskMenu ^ -->
+       <task-viewer></task-viewer>  
+    </main>
+    <footer>
+        <footer-bar></footer-bar>
+    </footer>
+</body>
+
 </html>

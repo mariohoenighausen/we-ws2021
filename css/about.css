@@ -1,0 +1,32 @@
+body{
+    height:100vh;
+    display:grid;
+    justify-content: center;
+}
+.no-text-deco{
+    text-decoration:none; 
+}
+.creator-link{
+    color:rgba(254, 186, 60, 0.982);
+}
+.creator-link:hover{
+    text-decoration: underline;
+}
+.prof-link{
+    color:green; 
+}
+.prof-link:hover{
+    text-decoration: underline;
+}
+.uni-link{
+    color: rgb(0, 132, 255)
+}
+.uni-link:hover{
+    text-decoration: underline;
+}
+.resource-link{
+    color:black;
+}
+.resource-link:hover{
+    text-decoration: underline;
+}

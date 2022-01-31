@@ -1,0 +1,105 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial", Arial, sans-serif;
+}
+.hidden {
+  display: hidden;
+}
+body {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* From https://css.glass */
+  background: rgba(220, 3, 3, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(220, 3, 3, 0.43);
+}
+.form-container {
+  display: grid;
+  grid-template-columns: 12fr;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  background: rgba(244, 52, 52, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(220, 3, 3, 0.43);
+}
+.input-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+.input-container > input {
+  outline: rgba(14, 9, 9, 0.6);
+}
+@keyframes hov {
+  from {
+    border-color: rgba(255, 255, 255, 0.43);
+  }
+  to {
+    border-color: rgba(17, 1, 1, 0.43);
+  }
+}
+
+.register-btn {
+  background: rgba(255, 255, 255, 0.56);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  animation: hov 1s forwards;
+}
+header {
+  /* From https://css.glass */
+  background: rgba(48, 38, 38, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(93, 75, 75, 0.43);
+}
+header > h1 {
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.781);
+}
+.login-btn {
+  text-decoration: none;
+  padding: 2px;
+  color: black;
+  background: rgba(255, 255, 255, 0.56);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  animation: hov 1s forwards;
+}
+a {
+  text-decoration: none;
+  color: black;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.56);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  padding: 3px;
+}
+@keyframes hov {
+  from {
+    border-color: rgba(255, 255, 255, 0.43);
+  }
+  to {
+    border-color: rgba(92, 3, 3, 0.43);
+  }
+}
+a:hover {
+  animation: hov 1s forwards;
+}

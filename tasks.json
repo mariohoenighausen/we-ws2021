@@ -288,7 +288,7 @@
             },
             "qAndAs": [
               {
-                "q": "Schauen Sie sich folgendes Video  https://www.youtube.com/watch?v=PE3POxjDspo an und bauen Sie das dynamische Verhalten exakt nach (nur mit HTML und CSS, ohne JavaScript): ",
+                "q": "Bauen Sie das dynamische Verhalten exakt nach (nur mit HTML und CSS, ohne JavaScript): ",
                 "submitted": {
                   "a": "",
                   "code": "./aufgaben/aufgabe2/uebung2_2_1.html"
@@ -299,7 +299,7 @@
                 }
               },
               {
-                "q": "Schauen Sie sich folgendes https://www.youtube.com/watch?v=HVmnv3k4__E Video an und bauen Sie das dynamische Verhalten exakt nach (nur mit HTML und CSS, ohne JavaScript). Das verwendete Bild finden Sie unter der Adresse https://upload.wikimedia.org/wikipedia/commons/a/a4/Hochschule_Bonn-Rhein-Sieg_Wolfgang_G%C3%B6ddertz_Induktion.jpg",
+                "q": "Bauen Sie das dynamische Verhalten exakt nach (nur mit HTML und CSS, ohne JavaScript). \n Das verwendete Bild finden Sie unter der Adresse https://upload.wikimedia.org/wikipedia/commons/a/a4/Hochschule_Bonn-Rhein-Sieg_Wolfgang_G%C3%B6ddertz_Induktion.jpg",
                 "submitted": {
                   "a": "",
                   "code": "./aufgaben/aufgabe2/uebung2_2_2.html"
@@ -314,12 +314,12 @@
           {
             "title": "2.3. Wireframe with HTML and CSS",
             "description":{
-                "text":"Gegeben ist folgendes HTML-Wireframe. Hinweis zu den Farben: Firefox DevTools anthalten eine Pipette namens „Eyedropper“, mit der man die Farben aus einer Webseite auslesen kann. Die grünliche Farbe im Rahmen des Wireframes ist demnach #b2d6d1, Hinweis zu den Schriften (Fonts): Die größte Sammlung an „kostenlosen“ Web-Schriften stammt von Google und ist unter Google Fonts zu finden. Wer lieber aus dem Vorrat an vorhanden Schriften auswählt, wird unter websichere Schriften fündig.",
+                "text":"Gegeben ist folgendes HTML-Wireframe. \n Hinweis zu den Farben: Firefox DevTools anthalten eine Pipette namens „Eyedropper“, mit der man die Farben aus einer Webseite auslesen kann. \n Die grünliche Farbe im Rahmen des Wireframes ist demnach #b2d6d1, Hinweis zu den Schriften (Fonts): \n Die größte Sammlung an „kostenlosen“ Web-Schriften stammt von Google und ist unter Google Fonts zu finden. \n Wer lieber aus dem Vorrat an vorhanden Schriften auswählt, wird unter websichere Schriften fündig.",
                 "wireframe":"https://kaul.inf.h-brs.de/we/assets/img/survey.png"
             },
             "qAndAs": [
               {
-                "q": " Frage: Mit welchem HTML- und CSS-Code kann man diesen Wireframe exakt nachbilden? Schreiben Sie Ihren CSS-Code direkt in die HTML-Datei. Geben Sie Ihren HTML- und CSS-Quellcode zusammen in dieses Textfeld ein: ",
+                "q": " Frage: Mit welchem HTML- und CSS-Code kann man diesen Wireframe exakt nachbilden? \n Schreiben Sie Ihren CSS-Code direkt in die HTML-Datei. \n Geben Sie Ihren HTML- und CSS-Quellcode zusammen in dieses Textfeld ein: ",
                 "submitted": {
                   "a": "",
                   "code": "./aufgaben/aufgabe2/uebung2_3.html"

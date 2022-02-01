@@ -1,11 +1,5 @@
 const taskTitleTemplate = document.createElement('template');
-taskTitleTemplate.innerHTML = `
-<style>
-.topic-heading {
-    font-size: 2.2em;
-}
-</style>
-`;
+taskTitleTemplate.innerHTML = ``;
 class TaskTitle extends HTMLElement{
     constructor(){
         super();

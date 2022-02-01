@@ -213,7 +213,7 @@
         },
         "qAndAs": [
           {
-            "q": "Geben Sie Ihren HTML-Quellcode in dieses Textfeld ein: ",
+            "q": "HTML-Code:",
             "submitted": {
               "a": "",
               "code": "./aufgaben/aufgabe1/aufgabe1_4.html"
@@ -314,12 +314,12 @@
           {
             "title": "2.3. Wireframe with HTML and CSS",
             "description":{
-                "text":"Gegeben ist folgendes HTML-Wireframe. \n Hinweis zu den Farben: Firefox DevTools anthalten eine Pipette namens „Eyedropper“, mit der man die Farben aus einer Webseite auslesen kann. \n Die grünliche Farbe im Rahmen des Wireframes ist demnach #b2d6d1, Hinweis zu den Schriften (Fonts): \n Die größte Sammlung an „kostenlosen“ Web-Schriften stammt von Google und ist unter Google Fonts zu finden. \n Wer lieber aus dem Vorrat an vorhanden Schriften auswählt, wird unter websichere Schriften fündig.",
+                "text":"",
                 "wireframe":"https://kaul.inf.h-brs.de/we/assets/img/survey.png"
             },
             "qAndAs": [
               {
-                "q": " Frage: Mit welchem HTML- und CSS-Code kann man diesen Wireframe exakt nachbilden? \n Schreiben Sie Ihren CSS-Code direkt in die HTML-Datei. \n Geben Sie Ihren HTML- und CSS-Quellcode zusammen in dieses Textfeld ein: ",
+                "q": " Frage: Mit welchem HTML- und CSS-Code kann man diesen Wireframe exakt nachbilden? \n ",
                 "submitted": {
                   "a": "",
                   "code": "./aufgaben/aufgabe2/uebung2_3.html"
@@ -563,7 +563,7 @@
           {
             "title": "4.4. Topsort",
             "description":{
-                "text":"n jedem Projekt fallen Aufgaben (Tasks) an. Zwischen den Aufgaben gibt es paarweise Abhängigkeiten. \n Z.B. kann Task2 von Task1 abhängen, d.h. erst muss Task1 fertig sein, bevor Task2 starten kann, weil es dessen Ergebnisse benötigt. \n Tasks können auch unabhängig voneinander sein und parallel ablaufen. \n In JavaScript können Sie die Abhängigkeiten in Arrays codieren, z.B. kann man bei [ ['schlafen', 'studieren'], ['essen', 'studieren'], ['studieren', 'prüfen'] ] nicht prüfen, ohne vorher gegessen zu haben. \n Transitive Abhängigkeiten müssen also berücksichtigt werden. \n Schreiben Sie in JavaScript eine Funktion topsort(), die eine topologische Sortierung berechnet. \n Topologische Sortierung ist eine Form von Sortierung. \n Sie kennen die Funktion Array.prototype.sort() und wissen, was als Ergebnis erwartet wird, nämlich eine sortiere Liste. Genauso ist das hier. \n Die Funktion topsort() soll eine sortierte Liste ausgeben, die keine der eingegebenen Abhängigkeiten verletzt. \n Achten Sie auf Performanz. \n Berechnen Sie die topologische Sortierung in linearer Zeit (Average Case).",
+                "text":"In jedem Projekt fallen Aufgaben (Tasks) an. Zwischen den Aufgaben gibt es paarweise Abhängigkeiten. \n Z.B. kann Task2 von Task1 abhängen, d.h. erst muss Task1 fertig sein, bevor Task2 starten kann, weil es dessen Ergebnisse benötigt. \n Tasks können auch unabhängig voneinander sein und parallel ablaufen. \n In JavaScript können Sie die Abhängigkeiten in Arrays codieren, z.B. kann man bei [ ['schlafen', 'studieren'], ['essen', 'studieren'], ['studieren', 'prüfen'] ] nicht prüfen, ohne vorher gegessen zu haben. \n Transitive Abhängigkeiten müssen also berücksichtigt werden. \n Schreiben Sie in JavaScript eine Funktion topsort(), die eine topologische Sortierung berechnet. \n Topologische Sortierung ist eine Form von Sortierung. \n Sie kennen die Funktion Array.prototype.sort() und wissen, was als Ergebnis erwartet wird, nämlich eine sortiere Liste. Genauso ist das hier. \n Die Funktion topsort() soll eine sortierte Liste ausgeben, die keine der eingegebenen Abhängigkeiten verletzt. \n Achten Sie auf Performanz. \n Berechnen Sie die topologische Sortierung in linearer Zeit (Average Case).",
                 "wireframe":""
             },
             "qAndAs": [
@@ -581,8 +581,8 @@
               {
                 "q": "Testen Sie Ihren JavaScript-Code. Verwenden Sie für Ihre Tests die Funktion console.assert. Geben Sie hier Ihre Tests ein:",
                 "submitted": {
-                  "a": "Not Submitted",
-                  "code": ""
+                  "a": "",
+                  "code": "./aufgaben/aufgabe4/uebung4_4_2.js"
                 },
                 "improved": {
                   "a": "",
@@ -1120,8 +1120,8 @@
                 "q": "Was ist der Fehler in dem gegebenen JavaScript-Code?",
                 "submitted": {
                   "a": "Das letzte console.log, was (x === y) + (y === x) berechnet gibt 2 zurück, obwohl es sich um die Addition von true und false handelt, was eigentlich 1 ergeben sollte.",
-                  "code": "./aufgaben/aufgabe10/uebung10_2.ts",
-                  "nocodevis":true
+                  "nocodevis":true,
+                  "code": "./aufgaben/aufgabe10/"
                 },
                 "improved": {
                   "a": "",

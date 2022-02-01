@@ -19,8 +19,8 @@
                 headers: { 'Content-type': 'html/text; charset=UTF-8' }
             };
             try {
-                const aResponse = await fetch('http://localhost:5500/html/aufgaben/aufgabe8/A.txt', header);
-                const bResponse = await fetch('http://localhost:5500/html/aufgaben/aufgabe8/B.txt', header);
+                const aResponse = await fetch('https://www2.inf.h-brs.de/~mhoeni2s/aufgaben/aufgabe8/A.txt', header);
+                const bResponse = await fetch('https://www2.inf.h-brs.de/~mhoeni2s/aufgaben/aufgabe8/B.txt', header);
                 const aTextResponse = await aResponse.text();
                 const bTextResponse = await bResponse.text();
                 splitAndPrint(aTextResponse, bTextResponse);

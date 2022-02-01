@@ -20,8 +20,8 @@
             };
 
             Promise.all([
-                fetch('http://localhost:5500/aufgaben/aufgabe8/A.txt', header).then(x => x.text()),
-                fetch('http://localhost:5500/aufgaben/aufgabe8/B.txt', header).then(x => x.text())
+                fetch('https://www2.inf.h-brs.de/~mhoeni2s/aufgaben/aufgabe8/A.txt', header).then(x => x.text()),
+                fetch('https://www2.inf.h-brs.de/~mhoeni2s/aufgaben/aufgabe8/B.txt', header).then(x => x.text())
             ]).then(([aTextResponse, bTextResponse]) => {
                 splitAndPrint(aTextResponse, bTextResponse);
             })

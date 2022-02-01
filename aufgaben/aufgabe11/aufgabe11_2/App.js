@@ -1,7 +1,7 @@
-import NavBar from "./NavBar.mjs";
-import Home from "./Home.mjs";
-import About from "./About.mjs";
-import Contact from "./Contact.mjs";
+import NavBar from "./NavBar.js";
+import Home from "./Home.js";
+import About from "./About.js";
+import Contact from "./Contact.js";
 
 new Vue({
   el: '#app',

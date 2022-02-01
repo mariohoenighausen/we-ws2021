@@ -1,4 +1,4 @@
-import Eingabe from './eingabe.mjs';
+import Eingabe from './eingabe.js';
 
 new Vue({
     el: '#app',

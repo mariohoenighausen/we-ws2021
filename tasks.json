@@ -1272,8 +1272,8 @@
                 "q": "Schreiben Sie eine Vue.js Single File Component mit einem Text-Eingabefeld und 3 Ausgabefeldern, \n in denen man während des Tippens sehen kann, (a) wie viele Buchstaben (b) wie viele Leerzeichen und (c) wie viele Worte man in das Text-Eingabefeld bereits eingegeben hat. \n Betten Sie Ihre Komponente in eine Webseite zweimal ein und testen Sie, ob beide Komponenten unabhängig voneinander sind.",
                 "submitted": {
                   "a": "",
-                  "nocodevis":false,
-                  "nocoderender":true,
+                  "nocodevis":true,
+                  "nocoderender":false,
                   "code": "aufgaben/aufgabe11/aufgabe11_1/document.html"
                 },
                 "improved": {
@@ -1294,8 +1294,8 @@
                 "q": "Schreiben Sie eine möglichst flexible Vue.js Single File Component für Menüs und wenden Sie diese in derselben Webseite zweimal an, einmal horizontal, das andere Mal vertikal.",
                 "submitted": {
                   "a": "",
-                  "nocodevis":false,
-                  "nocoderender":true,
+                  "nocodevis":true,
+                  "nocoderender":false,
                   "code": "./aufgaben/aufgabe11/aufgabe11_2/aufgabe11_2.html"
                 },
                 "improved": {

@@ -9,7 +9,6 @@ taskMenuTemplate.innerHTML = `
     nav > ul > li > a{
         text-decoration:none;
         color:black;
-        font-size: 12.5em;
     }
     nav > ul > li > a:hover{
         text-shadow: 5px 5px #8f7979;
@@ -18,46 +17,40 @@ taskMenuTemplate.innerHTML = `
         border-left: 0.03em solid black;
         cursor:pointer;
     }
-    .test{
-        font-size: 12.5em;
-    }
-    .test:hover{
-        text-shadow: 5px 5px #8f7979;
-        transform: scale(2,2);
-        border-bottom: 0.03em solid black;
-        border-left: 0.03em solid black;
-    }
     /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     nav > ul > li > a{
-        font-size: 5em; 
+        font-size: 6em; 
     }
-}
+  }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     nav > ul > li > a{
-        font-size: 7em; 
+        font-size: 6.2em; 
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     nav > ul > li > a{
-        font-size: 14em; 
+        font-size: 7.1em; 
     }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    nav > ul > li > a{
+      font-size: 9.4em; 
+  }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+  nav > ul > li > a{
+    font-size: 11.5em; 
+  }
 }
-
 .fade-in{
     animation: fadeIn linear 5s;
 }

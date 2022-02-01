@@ -1,11 +1,11 @@
 const copyrightTemplate = document.createElement('template');
 copyrightTemplate.innerHTML = `
 <style>
-copyright-link{
+.copyright-link{
     color:black;
     text-decoration:none;
 }
-copyright-link:hover{
+.copyright-link:hover{
     text-decoration:underline;
 }
 </style>`;

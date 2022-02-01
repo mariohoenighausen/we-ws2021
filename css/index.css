@@ -1,6 +1,5 @@
 body{
     font-family: Sans-Serif;
-    height:100%;
     grid-template-rows: auto 1fr auto;
 }
 header{

@@ -299,7 +299,7 @@
                 }
               },
               {
-                "q": "Bauen Sie das dynamische Verhalten exakt nach (nur mit HTML und CSS, ohne JavaScript). \n Das verwendete Bild finden Sie unter der Adresse https://upload.wikimedia.org/wikipedia/commons/a/a4/Hochschule_Bonn-Rhein-Sieg_Wolfgang_G%C3%B6ddertz_Induktion.jpg",
+                "q": "Bauen Sie das dynamische Verhalten exakt nach (nur mit HTML und CSS, ohne JavaScript).",
                 "submitted": {
                   "a": "",
                   "code": "./aufgaben/aufgabe2/uebung2_2_2.html"
@@ -1120,7 +1120,8 @@
                 "q": "Was ist der Fehler in dem gegebenen JavaScript-Code?",
                 "submitted": {
                   "a": "Das letzte console.log, was (x === y) + (y === x) berechnet gibt 2 zurück, obwohl es sich um die Addition von true und false handelt, was eigentlich 1 ergeben sollte.",
-                  "code": ""
+                  "code": "./aufgaben/aufgabe10/uebung10_2.ts",
+                  "nocodevis":true
                 },
                 "improved": {
                   "a": "",
@@ -1130,7 +1131,7 @@
               {
                 "q": "Welche Fehler meldet TypeScript?",
                 "submitted": {
-                  "a": "",
+                  "a": "Parameter 'x' implicitly has an 'any' type. \n Parameter 'y' implicitly has an 'any' type. \n Parameter 'x' implicitly has an 'any' type. \n Parameter 'y' implicitly has an 'any' type. \n Cannot find name 'y'. \n Cannot find name 'y'. \n Cannot find name 'y'.",
                   "code": ""
                 },
                 "improved": {
@@ -1141,7 +1142,7 @@
               {
                 "q": "Geben Sie weitere Beispiele an, wie TypeScript bei der Fehlersuche helfen kann:",
                 "submitted": {
-                  "a": "",
+                  "a": "Implizite Return types werden markiert \n Strict null checks \n Inkorrekte Implementierungen von Interfaces.",
                   "code": ""
                 },
                 "improved": {

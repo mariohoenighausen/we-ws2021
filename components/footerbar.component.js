@@ -12,11 +12,11 @@ footerBarTemplate.innerHTML = `
         display:grid;
         justify-items:center;
     }
-    a{
+    nav > ul > li > a{
         text-decoration:none;
         color:black;
     }
-    a:hover{
+    nav > ul > li > a:hover{
         text-decoration:underline;
     }
 </style>

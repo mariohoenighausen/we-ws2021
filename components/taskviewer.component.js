@@ -16,7 +16,7 @@ taskViewerTemplate.innerHTML = `
     }
     .render-vs-code > iframe{
         width:100%;
-        height:100%;
+        height:250x;
     }
 }
 
@@ -28,7 +28,7 @@ taskViewerTemplate.innerHTML = `
     }
     .render-vs-code > iframe{
         width:100%;
-        height:500px;
+        height:250px;
     }
 }
 
@@ -50,6 +50,10 @@ taskViewerTemplate.innerHTML = `
         display:grid;
         grid-template-columns: 1fr 1fr;
     }
+    .render-vs-code > iframe{
+        width:100%;
+        height:750px;
+    }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -60,7 +64,7 @@ taskViewerTemplate.innerHTML = `
     }
     .render-vs-code > iframe{
         width:100%;
-        height:100%   
+        height:1000px   
     }
 }
 .fade-in{
@@ -73,7 +77,6 @@ taskViewerTemplate.innerHTML = `
 #tasks-container{
     animation: fadeIn linear 3s;
 }
-#tasks-container > 
 </style>`
 class TaskViewer extends HTMLElement{
     constructor(){
@@ -122,9 +125,6 @@ class TaskViewer extends HTMLElement{
                         tasksContainer.appendChild(document.createElement('br'));
                         tasksContainer.appendChild(codeLink);
                         tasksContainer.appendChild(document.createElement('br'));
-                        let code = document.createElement('code-display');
-                        code.setAttribute('code', item.submitted.code);
-                        renderVsCodeDiv.appendChild(code);
                     }
                     if(!item.submitted.nocoderender){
                         let render = document.createElement('iframe');

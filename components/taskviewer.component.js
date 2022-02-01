@@ -132,7 +132,7 @@ class TaskViewer extends HTMLElement{
                     if (!item.submitted.nocodevis){
                         const codeDisplay = document.createElement('code-display');
                         codeDisplay.setAttribute('code', item.submitted.code);
-                        tasksContainer.appendChild(codeDisplay);
+                        renderVsCodeDiv.appendChild(codeDisplay);
                     }
                     if(!item.submitted.nocoderender){
                         let render = document.createElement('iframe');

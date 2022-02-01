@@ -36,12 +36,12 @@ function createGraph(graph,list) {
         graph.addKante(idx[0],idx[1]);
     }
 }
-function topSortHelper(k, n, besuchteKnoten, topNums) {
+function topSortHelper(graph, k, n, besuchteKnoten, topNums) {
     besuchteKnoten[k] = true;
     const nachbarn = graph.adjazenzListe[k];
     for (const nachbar of nachbarn) {
         if (!besuchteKnoten[nachbar]) {
-            n = topSortHelper(nachbar, n, besuchteKnoten, topNums);
+            n = topSortHelper(graph, nachbar, n, besuchteKnoten, topNums);
         }
     }
     topNums[k] = n;
@@ -55,7 +55,7 @@ function topSort(graph) {
     var n = knoten.length - 1;
     for (const k of knoten) {
         if (!besuchteKnoten[k]) {
-            n = topSortHelper(k, n, besuchteKnoten, topNums)
+            n = topSortHelper(graph, k, n, besuchteKnoten, topNums)
         }
     }
     return topNums;

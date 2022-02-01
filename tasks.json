@@ -152,6 +152,8 @@
             "q": "Wie kann man eine geschachtelte geordnete Liste der Schachtelungstiefe 3 erzeugen?",
             "submitted": {
               "a": "",
+              "nocodevis":true,
+              "nocoderender":false,
               "code": "./aufgaben/aufgabe1/aufgabe1_3_2.html"
             },
             "improved": {
@@ -184,7 +186,9 @@
           {
             "q": "Wie baut man in HTML ein Menü?",
             "submitted": {
-              "a": "Menüs werden durch das Verwenden des Navigations-Tags (<nav>),von ungeordneten Listen (<ul>), sowie Anchor Tags (<a href=““>) realisiert. Href kann auf eine id, oder http Adressen referenzieren.",
+              "a": "Menüs werden durch das Verwenden des Navigations-Tags (<\n nav \n >),von ungeordneten Listen (< ul >), sowie Anchor Tags (< a >) realisiert. Href kann auf eine id, oder http Adressen referenzieren.",
+              "nocodevis":true,
+              "nocoderender":false,
               "code": "./aufgaben/aufgabe1/aufgabe1_3_5.html"
             },
             "improved": {
@@ -195,7 +199,7 @@
           ,{
             "q": "Welche Attribute sollte man bei Bildern wie verwenden?",
             "submitted": {
-              "a": "Bei Bildern (<img>) sollte man die Attribute src, zum Setzen einer Quelle, alt, zum Setzen eines bei nicht Darstellbarkeit des Bildes alternativ darzustellenden Textes, sowie width zum Setzen der Breite und height zum Sezten der Höhe eines Bildes, mindestens verwenden. <img src='' alt='Alternativer Text' height='' width=''>",
+              "a": "Bei Bildern (< img >) sollte man die Attribute src, zum Setzen einer Quelle, alt, zum Setzen eines bei nicht Darstellbarkeit des Bildes alternativ darzustellenden Textes, sowie width zum Setzen der Breite und height zum Sezten der Höhe eines Bildes, mindestens verwenden. < img src='' alt='Alternativer Text' height='' width='' >",
               "code": ""
             },
             "improved": {
@@ -216,6 +220,8 @@
             "q": "HTML-Code",
             "submitted": {
               "a": "",
+              "nocodevis":true,
+              "nocoderender":false,
               "code": "./aufgaben/aufgabe1/aufgabe1_4.html"
             },
             "improved": {
@@ -291,7 +297,9 @@
                 "q": "Bauen Sie das dynamische Verhalten exakt nach (nur mit HTML und CSS, ohne JavaScript): ",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe2/uebung2_2_1.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "aufgaben/aufgabe2/aufgabe2_2_1.html"
                 },
                 "improved": {
                   "a": "",
@@ -302,7 +310,9 @@
                 "q": "Bauen Sie das dynamische Verhalten exakt nach (nur mit HTML und CSS, ohne JavaScript).",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe2/uebung2_2_2.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "aufgaben/aufgabe2/aufgabe2_2_2.html"
                 },
                 "improved": {
                   "a": "",
@@ -322,7 +332,9 @@
                 "q": " Frage: Mit welchem HTML- und CSS-Code kann man diesen Wireframe exakt nachbilden? ",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe2/uebung2_3.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "aufgaben/aufgabe2/aufgabe2_3.html"
                 },
                 "improved": {
                   "a": "",
@@ -358,7 +370,9 @@
                 "q": "Implementieren Sie dann ausschließlich mit HTML und CSS Flexbox folgendes responsive Webdesign nach der Desktop-First-Strategie!",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe3/aufgabe3_1.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "aufgaben/aufgabe3/aufgabe3_1.html"
                 },
                 "improved": {
                   "a": "",
@@ -378,7 +392,9 @@
                 "q": "Implementieren Sie dann das gleiche responsive Webdesign wie in Aufgabe 3.1 allerdings mit Grid und der Mobile-First-Strategie! Vermeiden Sie diesmal außerdem das Erscheinen von Scrollbars.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe3/aufgabe3_2.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "aufgaben/aufgabe3/aufgabe3_2.html"
                 },
                 "improved": {
                   "a": "",
@@ -398,7 +414,9 @@
                 "q": "Implementieren Sie folgende Landing Page responsiv mit Grid Layout. Vermeiden Sie außerdem das Erscheinen von Scrollbars so weit wie möglich.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe3/aufgabe3_3.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "aufgaben/aufgabe3/aufgabe3_3.html"
                 },
                 "improved": {
                   "a": "",
@@ -422,7 +440,9 @@
                 "q": "Schreiben Sie eine Funktion identity(), die ein Argument als Parameter entgegen nimmt und dieses als Ergebnis zurück gibt.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe4/uebung4_1_1.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe4/aufgabe4_1_1.js"
                 },
                 "improved": {
                   "a": "",
@@ -433,7 +453,9 @@
                 "q": "Schreiben Sie eine Funktion identity_function(), die ein Argument als Parameter entgegen nimmt und eine Funktion zurück gibt, die dieses Argument zurück gibt.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe4/uebung4_1_2.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe4/aufgabe4_1_2.js"
                 },
                 "improved": {
                   "a": "",
@@ -444,7 +466,9 @@
                 "q": "Schreiben Sie zwei binäre Funktionen add und mul, die Summe und Produkt berechnen.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe4/uebung4_1_3.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe4/aufgabe4_1_3.js"
                 },
                 "improved": {
                   "a": "",
@@ -455,7 +479,9 @@
                 "q": "Schreiben Sie eine Addier-Funktion addf(), so dass addf(x)(y) genau x + y zurück gibt. (Es haben also zwei Funktionsaufrufe zu erfolgen. addf(x) liefert eine Funktion, die auf y angewandt wird.)",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe4/uebung4_1_4.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe4/aufgabe4_1_4.js"
                 },
                 "improved": {
                   "a": "",
@@ -466,7 +492,9 @@
                 "q": "Schreiben Sie eine Funktion applyf(), die aus einer binären Funktion wie add(x,y) eine Funktion addfberechnet, die mit zwei Aufrufen das gleiche Ergebnis liefert, z.B. addf = applyf(add); addf(x)(y) soll add(x,y) liefern. Entsprechend applyf(mul)(5)(6) soll 30 liefern, wenn mul die binäre Multiplikation ist.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe4/uebung4_1_5.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe4/aufgabe4_1_5.js"
                 },
                 "improved": {
                   "a": "",
@@ -487,7 +515,9 @@
                 "q": "Geben Sie hier Ihren JavaScript-Code inkl. Tests ein.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe4/uebung4_2.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe4/aufgabe4_2.js"
                 },
                 "improved": {
                   "a": "",
@@ -507,7 +537,9 @@
                 "q": "",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe4/uebung4_3_1.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe4/aufgabe4_3_1.html"
                 },
                 "improved": {
                   "a": "",
@@ -540,7 +572,9 @@
                 "q": "Wechseln Sie zu BigInt, um alle 2000 Fibonacci-Zahlen korrekt anzuzeigen. Geben Sie hier HTML- und JavaScript-Code zusammen ein:",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe4/uebung4_3_4.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe4/aufgabe4_3_4.html"
                 },
                 "improved": {
                   "a": "",
@@ -550,7 +584,7 @@
               {
                 "q": "Optional: Was ist die größte Fibonacci-Zahl, die Sie mit BigInt korrekt berechnet haben? An welcher Stelle in der Fibonacci-Folge steht diese?",
                 "submitted": {
-                  "a": "Die zweitausendste Zahl in der Fibonacchi Folge, ist \n422469633339230487870672560234148278257985284025068109801028013731430858437013 \n 070722412359963914151108844608753890960360764019471164359602927198331259873732\n6253555802606991585915229492453904998722256795316982874482472992263901833716778\n0606070116154978867198798583114688708762645973690867228840\n236544222952433479644801395153495629720876526\n5606952980649984197744872015561280266540455 \n 4171717881930324025204312082516817125",
+                  "a": "Die zweitausendste Zahl in der Fibonacchi Folge, ist 4224696333392304878706725602341482782579852840250681\n0980102801373143085843701307072241235996391415110884\n4608753890960360764019471164359602927198331259873732\n6253555802606991585915229492453904998722256795316982\n8744824729922639018337167780606070116154978867198798\n5831146887087626459736908672288402365442229524334796\n4480139515349562972087652656069529806499841977448720\n1556128026654045541717178819303240252043120825168171\n25",
                   "code": ""
                 },
                 "improved": {
@@ -571,7 +605,9 @@
                 "q": "",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe4/uebung4_4_1.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe4/aufgabe4_4_1.html"
                 },
                 "improved": {
                   "a": "",
@@ -606,7 +642,9 @@
                 "q": "",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe5/uebung5_1.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe5/aufgabe5_1.html"
                 },
                 "improved": {
                   "a": "",
@@ -626,7 +664,9 @@
                 "q": "",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe5/uebung5_2.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe5/aufgabe5_2.html"
                 },
                 "improved": {
                   "a": "",
@@ -646,7 +686,9 @@
                 "q": "",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe5/uebung5_3.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe5/aufgabe5_3.html"
                 },
                 "improved": {
                   "a": "",
@@ -670,7 +712,9 @@
                 "q": "Schreiben Sie eine Webseite, in die man eine Zeichenkette mit beliebigen Buchstaben, Zahlen und Sonderzeichen eingeben kann, die beliebig geschachtelte Klammern [...], (...) und {...} enthält, so dass sofort geprüft wird, ob alle Klammerpaare korrekt geschachtelt sind. Das Eingabefeld der Zeichenkette soll rot gefärbt werden, wenn es ein Klammerpaar gibt, das falsch geschachtelt ist.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe6/uebung6_1.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe6/aufgabe6_1.html"
                 },
                 "improved": {
                   "a": "",
@@ -785,7 +829,9 @@
                 "q": "Schreiben Sie eine Funktion identity_function(), die ein Argument als Parameter entgegennimmt und eine Funktion zurückgibt, die dieses Argument zurückgibt.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_1.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_1.js"
                 },
                 "improved": {
                   "a": "",
@@ -796,7 +842,9 @@
                 "q": "Schreiben Sie eine Addier-Funktion addf(), so dass addf(x)(y) genau x + y zurück gibt. (Es haben also zwei Funktionsaufrufe zu erfolgen. addf(x) liefert eine Funktion, die auf y angewandt wird.)",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_2.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_2.js"
                 },
                 "improved": {
                   "a": "",
@@ -807,7 +855,9 @@
                 "q": "Schreiben Sie eine Funktion applyf(), die aus einer binären Funktion wie add(x,y) eine Funktion addfberechnet, die mit zwei Aufrufen das gleiche Ergebnis liefert, z.B. addf = applyf(add); addf(x)(y) soll add(x,y) liefern. Entsprechend applyf(mul)(5)(6) soll 30 liefern, wenn mul die binäre Multiplikation ist.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_3.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_3.js"
                 },
                 "improved": {
                   "a": "",
@@ -818,7 +868,9 @@
                 "q": "Schreiben Sie eine Funktion curry() (von Currying), die eine binäre Funktion und ein Argument nimmt, um daraus eine Funktion zu erzeugen, die ein zweites Argument entgegen nimmt, z.B. add3 = curry(add, 3);add3(4) ergibt 7. curry(mul, 5)(6) ergibt 30.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_4.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_4.js"
                 },
                 "improved": {
                   "a": "",
@@ -829,7 +881,9 @@
                 "q": "Erzeugen Sie die inc-Funktion mit Hilfe einer der Funktionen addf, applyf und curry aus den letzten Aufgaben, ohne die Funktion inc() selbst zu implementieren. (inc(x) soll immer x + 1 ergeben und lässt sich natürlich auch direkt implementieren. Das ist aber hier nicht die Aufgabe.) Vielleicht schaffen Sie es auch, drei Varianten der inc()-Implementierung zu schreiben?",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_5.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_5.js"
                 },
                 "improved": {
                   "a": "",
@@ -840,7 +894,9 @@
                 "q": "Schreiben Sie eine Funktion methodize(), die eine binäre Funktion (z.B. add, mul) in eine unäre Methode verwandelt. Nach Number.prototype.add = methodize(add); soll (3).add(4) genau 7 ergeben.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_6.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_6.js"
                 },
                 "improved": {
                   "a": "",
@@ -851,7 +907,9 @@
                 "q": "Schreiben Sie eine Funktion demethodize(), die eine unäre Methode (z.B. add, mul) in eine binäre Funktion umwandelt. demethodize(Number.prototype.add)(5, 6) soll 11 ergeben.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_7.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_7.js"
                 },
                 "improved": {
                   "a": "",
@@ -862,7 +920,9 @@
                 "q": "Schreiben Sie eine Funktion twice(), die eine binäre Funktion in eine unäre Funktion umwandelt, die den einen Parameter zweimal weiter reicht. Z.B. var double = twice(add); double(11) soll 22 ergeben; var square = twice(mul); square(11) soll mul(11,11) === 121 ergeben.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_8.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_8.js"
                 },
                 "improved": {
                   "a": "",
@@ -873,7 +933,9 @@
                 "q": "Schreiben Sie eine Funktion composeu(), die zwei unäre Funktionen in eine einzelne unäre Funktion transformiert, die beide nacheinander aufruft, z.B. soll composeu(double, square)(3) genau 36 ergeben.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_9.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_9.js"
                 },
                 "improved": {
                   "a": "",
@@ -884,7 +946,9 @@
                 "q": "Schreiben Sie eine Funktion composeb(), die zwei binäre Funktionen in eine einzelne Funktion transformiert, die beide nacheinander aufruft, z.B. composeb(add, mul)(2, 3, 5) soll 25 ergeben.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_10.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_10.js"
                 },
                 "improved": {
                   "a": "",
@@ -895,7 +959,9 @@
                 "q": "Schreiben Sie eine Funktion once(), die einer anderen Funktion nur einmal erlaubt, aufgerufen zu werden, z.B. add_once = once(add); add_once(3, 4) soll beim ersten Mal 7 ergeben, beim zweiten Mal soll jedoch add_once(3, 4) einen Fehlerabbruch bewirken.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_11.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_11.js"
                 },
                 "improved": {
                   "a": "",
@@ -906,7 +972,9 @@
                 "q": "Schreiben Sie eine Fabrik-Funktion counterf(), die zwei Funktionen inc() und dec() berechnet, die einen Zähler hoch- und herunterzählen. Z.B. counter = counterf(10); Dann soll counter.inc() 11 und counter.dec() wieder 10 ergeben.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_12.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_12.js"
                 },
                 "improved": {
                   "a": "",
@@ -917,7 +985,9 @@
                 "q": "Schreiben Sie eine rücknehmbare Funktion revocable(), die als Parameter eine Funktion nimmt und diese bei Aufruf ausführt. Sobald die Funktion aber mit revoke() zurück genommen wurde, führt ein erneuter Aufruf zu einem Fehler. Z.B. temp = revocable(alert); temp.invoke(7); // führt zu alert(7); temp.revoke(); temp.invoke(8); // Fehlerabbruch!",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_13.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_13.js"
                 },
                 "improved": {
                   "a": "",
@@ -928,7 +998,9 @@
                 "q": "Implementieren Sie ein 'Array Wrapper'-Objekt mit den Methoden get, store und append, so dass ein Angreifer keinen Zugriff auf das innere, private Array hat. my_vector = vector(); my_vector.append(7); my_vector.store(1, 8); my_vector.get(0) // 7 my_vector.get(1) // 8 ",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe7/uebung7_1_14.js"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe7/aufgabe7_1_14.js"
                 },
                 "improved": {
                   "a": "",
@@ -972,7 +1044,9 @@
             "q":"",
             "submitted":{
               "a":"",
-              "code":"./aufgaben/aufgabe8/uebung8_1.html"
+              "nocodevis":true,
+              "nocoderender":false,
+              "code":"./aufgaben/aufgabe8/aufgabe8_1.html"
             },
             "improved":{
               "a":"",
@@ -992,7 +1066,9 @@
             "q":"",
             "submitted":{
               "a":"",
-              "code":"./aufgaben/aufgabe8/uebung8_2.html"
+              "nocodevis":true,
+              "nocoderender":false,
+              "code":"./aufgaben/aufgabe8/aufgabe8_2.html"
             },
             "improved":{
               "a":"",
@@ -1012,7 +1088,9 @@
             "q":"",
             "submitted":{
               "a":"",
-              "code":"./aufgaben/aufgabe8/uebung8_3.html"
+              "nocodevis":true,
+              "nocoderender":false,
+              "code":"./aufgaben/aufgabe8/aufgabe8_3.html"
             },
             "improved":{
               "a":"",
@@ -1036,7 +1114,9 @@
                 "q": "Codieren Sie eine HTML-Datei mit Inline SVG, so dass sich folgendes Aussehen ergibt: Fügen Sie als Hover-Effekt eine CSS-Animation hinzu, die die Größe der SVG-Grafik verdoppelt, wenn man mit dem Cursor über die Grafik geht.",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe9/uebung9_1.html"
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe9/aufgabe9_1.html"
                 },
                 "improved": {
                   "a": "",
@@ -1056,7 +1136,9 @@
                     "q": "Implementieren Sie ein eigenes Balkendiagramm mit HTML, Inline SVG, CSS und JavaScript. Geben Sie die Daten für das Balkendiagramm im JSON-Format vor. Nehmen Sie als Beispieldaten die COVID-19: Fallzahlen in Deutschland. Animieren Sie die Grafik (siehe z.B. Highchart Bar Chart).",
                     "submitted": {
                       "a": "",
-                      "code": "./aufgaben/aufgabe9/uebung9_2.html"
+                      "nocodevis":true,
+                      "nocoderender":false,
+                      "code": "./aufgaben/aufgabe9/aufgabe9_2.html"
                     },
                     "improved": {
                       "a": "",
@@ -1120,8 +1202,9 @@
                 "q": "Was ist der Fehler in dem gegebenen JavaScript-Code?",
                 "submitted": {
                   "a": "Das letzte console.log, was (x === y) + (y === x) berechnet gibt 2 zurück, obwohl es sich um die Addition von true und false handelt, was eigentlich 1 ergeben sollte.",
-                  "nocodevis":true,
-                  "code": "./aufgaben/aufgabe10/"
+                  "nocodevis":false,
+                  "nocoderender":true,
+                  "code": "aufgaben/aufgabe10/aufgabe10_2.ts"
                 },
                 "improved": {
                   "a": "",
@@ -1163,8 +1246,9 @@
                 "q": "Schreiben Sie in TypeScript möglichst umfangreich statisch typisiert ein auf Deno ablauffähiges Programm server.ts, \n das Sie mit deno run --allow-net server.ts starten können, \n das die COVID-19-Fallzahlen in Deutschland einliest, Minimum, Maximum, Durchschnitt und Summe berechnet und diese auf einer Webseite ausgibt. \n Ein Beispiel-Programm zu server.ts finden Sie im Deno-Manual unter Making an HTTP request",
                 "submitted": {
                   "a": "",
-                  "nocodevis":true,
-                  "code": "./aufgaben/aufgabe10/"
+                  "nocodevis":false,
+                  "nocoderender":true,
+                  "code": "aufgaben/aufgabe10/aufgabe10_3.ts"
                 },
                 "improved": {
                   "a": "",
@@ -1188,8 +1272,9 @@
                 "q": "Schreiben Sie eine Vue.js Single File Component mit einem Text-Eingabefeld und 3 Ausgabefeldern, \n in denen man während des Tippens sehen kann, (a) wie viele Buchstaben (b) wie viele Leerzeichen und (c) wie viele Worte man in das Text-Eingabefeld bereits eingegeben hat. \n Betten Sie Ihre Komponente in eine Webseite zweimal ein und testen Sie, ob beide Komponenten unabhängig voneinander sind.",
                 "submitted": {
                   "a": "",
-                  
-                  "code": "./aufgaben/aufgabe11/uebung11_1/document.html"
+                  "nocodevis":true,
+                  "nocoderender":true,
+                  "code": "aufgaben/aufgabe11/uebung11_1/document.html"
                 },
                 "improved": {
                   "a": "",
@@ -1209,6 +1294,8 @@
                 "q": "Schreiben Sie eine möglichst flexible Vue.js Single File Component für Menüs und wenden Sie diese in derselben Webseite zweimal an, einmal horizontal, das andere Mal vertikal.",
                 "submitted": {
                   "a": "",
+                  "nocodevis":true,
+                  "nocoderender":true,
                   "code": "./aufgaben/aufgabe11/uebung11_2/uebung11_2.html"
                 },
                 "improved": {
@@ -1230,7 +1317,8 @@
                 "submitted": {
                   "a": "Das Pages Directory beinhaltet alle Seiten: Home, About, Tasks, Contact, PageNotFound. Das Components Directory beinhaltet alle Komponenten: Hero, MenuBar, FooterBar, Link, Task.  Das Layouts directory beinhaltet Layouts, die den das Grundlayout der Seite festlegen, in die dann content durch einen Slot eingesetzt werden kann. Credit des Templates: https://github.com/chrisvfritz/vue-2.0-simple-routing-example",
                   "code": "./aufgaben/aufgabe11/uebung11_3/",
-                  "nocodevis":true
+                  "nocodevis":false,
+                  "nocoderender":true
                 },
                 "improved": {
                   "a": "",
@@ -1254,8 +1342,9 @@
                 "q": "Erstellen Sie mit PHP 5 auf www2.inf.h-brs.de ein Registrierungsformular. Speichern Sie die eingegebenen Daten persistent in einer Datei auf www2.inf.h-brs.de. Schreiben Sie Ihre PHP-Scripte so, dass es zu keinen Nebenläufigkeitsartefakten (z.B. Lost Update) kommen kann, egal wie viele Nutzer sich gleichzeitig registrieren. ",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe12/uebung12_1_and_2/project/register.php",
-                  "nocoderender":true
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe12/uebung12_1_and_2/project/register.php"
                 },
                 "improved": {
                   "a": "",
@@ -1275,8 +1364,9 @@
                 "q": "Schreiben Sie eine sichere PHP-Lösung für Login, das die persistierten Registrierungsdaten aus der letzten Aufgabe nutzt. ",
                 "submitted": {
                   "a": "",
-                  "code": "./aufgaben/aufgabe12/uebung12_1_and_2/project/login.php",
-                  "nocoderender":true
+                  "nocodevis":true,
+                  "nocoderender":false,
+                  "code": "./aufgaben/aufgabe12/uebung12_1_and_2/project/login.php"
                 },
                 "improved": {
                   "a": "",
@@ -1297,6 +1387,7 @@
                 "submitted": {
                   "a": "Not submitted",
                   "code": "",
+                  "nocodevis":false,
                   "nocoderender":true
                 },
                 "improved": {
@@ -1320,7 +1411,7 @@
               {
                 "q": "",
                 "submitted": {
-                  "a": "",
+                  "a": "Not submitted",
                   "code": ""
                 },
                 "improved": {
@@ -1360,7 +1451,7 @@
               {
                 "q": "Installieren Sie WebGoat. Starten Sie das Docker Image mit WebGoat. Öffnen Sie die Landing Page von WebGoat. \n Lösen Sie die Aufgaben in (A7) Cross-Site Scripting (XSS), Cross Site Scripting.",
                 "submitted": {
-                  "a": "lesson 2: Were the cookies the same on each tab? \n Answers: alert(document.cookie); Yes \n lesson 7:  The goal of the assignment is to identify which field is susceptible to XSS. \n It is always a good practice to validate all input on the server-side. \n XSS can occur when unvalidated user input gets used in an HTTP response. \n In a reflected XSS attack, an attacker can craft a URL with the attack script and post it to another website, email it, or otherwise get a victim to click on it. \n An easy way to find out if a field is vulnerable to an XSS attack is to use the alert() or console.log() methods. \n Use one of them to find out which field is vulnerable. \n Answers:  Input of the enter your credit card number field: <script>alert()</script> \n lesson 10:  OM-Based XSS can usually be found by looking for the route configurations in the client-side code. \n Look for a route that takes inputs that are being 'reflected' to the page. \n For this example, you will want to look for some 'test' code in the route handlers (WebGoat uses backbone as its primary JavaScript library). \n Sometimes, test code gets left in production (and often times test code is very simple and lacks security or any quality controls!). \n Your objective is to find the route and exploit it.\n  First though​ what is the base route? \n As an example, look at the URL for this lesson  it should look something like /WebGoat/start.mvc#lesson/CrossSiteScripting.lesson/9.\n  The 'base route' in this case is: start.mvc#lesson/ The CrossSiteScripting.lesson/9 after that are parameters that are processed by the JavaScript route handler. \n So, what is the route for the test code that stayed in the app during production? \n To answer this question, you have to check the JavaScript source. \n Answer: start.mvc#test  \n lesson 11: Answer: http://localhost:8080/WebGoat/start.mvc#test/<script>Ewebgoat.customjs.phoneHome()<%2Fscript> Response: phone home said {“lessonCompleted“:true,“feedback“:“Congratulations. You have successfully completed the assignment.“,“output“:“phoneHome Response is -1834366160“,“assignment“:“DOMCrossSiteScripting“,“attemptWasMade“:true} \n lesson 12: Q1: Are trusted websites immune to XSS attacks? Solution 4: No because the browser trusts the website if it is acknowledged trusted, then the browser does not know that the script is malicious. \n Q2: When do XSS attacks occur?  \n Solution 3: The data is included in dynamic content that is sent to a web user without being validated for malicious content. Q3: What are Stored XSS attacks? \n Solution 1: The script is permanently stored on the server and the victim gets the malicious script when requesting information from the server. \n  Q4: What are Reflected XSS attacks? Solution 2: They reflect the injected script off the web server. \n That occurs when input sent to the web server is part of the request. \n Q5: Is JavaScript the only way to perform XSS attacks? \n Solution 4: No there are many other ways. Like HTML, Flash or any other type of code that the browser executes.",
+                  "a": "lesson 2: Were the cookies the same on each tab? \r\n Answers: alert(document.cookie); Yes \n lesson 7:  The goal of the assignment is to identify which field is susceptible to XSS. \n It is always a good practice to validate all input on the server-side. \n XSS can occur when unvalidated user input gets used in an HTTP response. \n In a reflected XSS attack, an attacker can craft a URL with the attack script and post it to another website, email it, or otherwise get a victim to click on it. \n An easy way to find out if a field is vulnerable to an XSS attack is to use the alert() or console.log() methods. \n Use one of them to find out which field is vulnerable. \n Answers:  Input of the enter your credit card number field: <script>alert()</script> \n lesson 10:  OM-Based XSS can usually be found by looking for the route configurations in the client-side code. \n Look for a route that takes inputs that are being 'reflected' to the page. \n For this example, you will want to look for some 'test' code in the route handlers (WebGoat uses backbone as its primary JavaScript library). \n Sometimes, test code gets left in production (and often times test code is very simple and lacks security or any quality controls!). \n Your objective is to find the route and exploit it.\n  First though​ what is the base route? \n As an example, look at the URL for this lesson  it should look something like /WebGoat/start.mvc#lesson/CrossSiteScripting.lesson/9.\n  The 'base route' in this case is: start.mvc#lesson/ The CrossSiteScripting.lesson/9 after that are parameters that are processed by the JavaScript route handler. \n So, what is the route for the test code that stayed in the app during production? \n To answer this question, you have to check the JavaScript source. \n Answer: start.mvc#test  \n lesson 11: Answer: http://localhost:8080/WebGoat/start.mvc#test/<script>Ewebgoat.customjs.phoneHome()<%2Fscript> Response: phone home said {“lessonCompleted“:true,“feedback“:“Congratulations. You have successfully completed the assignment.“,“output“:“phoneHome Response is -1834366160“,“assignment“:“DOMCrossSiteScripting“,“attemptWasMade“:true} \n lesson 12: Q1: Are trusted websites immune to XSS attacks? Solution 4: No because the browser trusts the website if it is acknowledged trusted, then the browser does not know that the script is malicious. \n Q2: When do XSS attacks occur?  \n Solution 3: The data is included in dynamic content that is sent to a web user without being validated for malicious content. Q3: What are Stored XSS attacks? \n Solution 1: The script is permanently stored on the server and the victim gets the malicious script when requesting information from the server. \n  Q4: What are Reflected XSS attacks? Solution 2: They reflect the injected script off the web server. \n That occurs when input sent to the web server is part of the request. \n Q5: Is JavaScript the only way to perform XSS attacks? \n Solution 4: No there are many other ways. Like HTML, Flash or any other type of code that the browser executes.",
                   "code": ""
                 },
                 "improved": {
@@ -1381,6 +1472,8 @@
                   "q":"Installieren Sie WebGoat. Starten Sie das Docker Image mit WebGoat. \n Öffnen Sie die Landing Page von WebGoat. Lösen Sie die Aufgaben zu (A8:2013) Request Forgeries, Cross-Site Request Forgeries.",
                   "submitted": {
                   "a":"",
+                  "nocodevis":true,
+                  "nocoderender":false,
                   "code":"./aufgaben/aufgabe13/uebung13_4_1.html"
                 },
                 "improved": {

@@ -8,6 +8,11 @@ taskViewerTemplate.innerHTML = `
 .code-link:hover{
     text-decoration: underline;
 }
+.render-vs-code > iframe{
+    -webkit-box-shadow: 7px 4px 11px -4px #000000; 
+    box-shadow: 7px 4px 11px -4px #000000;
+    padding:5px;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .render-vs-code{
@@ -64,7 +69,7 @@ taskViewerTemplate.innerHTML = `
     }
     .render-vs-code > iframe{
         width:100%;
-        height:1000px   
+        height:750px   
     }
 }
 .fade-in{
@@ -116,8 +121,7 @@ class TaskViewer extends HTMLElement{
                 if(item.submitted.code.length > 0){
                     const renderVsCodeDiv = document.createElement('div');
                    
-                    if (!item.submitted.nocodevis){
-                        const codeLink = document.createElement('a');
+                    const codeLink = document.createElement('a');
                         codeLink.href = item.submitted.code;
                         codeLink.className = 'code-link';
                         codeLink.innerText = "View full page 🔗";
@@ -125,6 +129,10 @@ class TaskViewer extends HTMLElement{
                         tasksContainer.appendChild(document.createElement('br'));
                         tasksContainer.appendChild(codeLink);
                         tasksContainer.appendChild(document.createElement('br'));
+                    if (!item.submitted.nocodevis){
+                        const codeDisplay = document.createElement('code-display');
+                        codeDisplay.setAttribute('code', item.submitted.code);
+                        tasksContainer.appendChild(codeDisplay);
                     }
                     if(!item.submitted.nocoderender){
                         let render = document.createElement('iframe');

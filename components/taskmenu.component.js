@@ -61,6 +61,9 @@ taskMenuTemplate.innerHTML = `
 nav{
     animation: fadeIn linear 3s;
 }
+#close-btn{
+    padding:10px;
+}
 </style>`;
 class TaskMenu extends HTMLElement {
   constructor() {
@@ -71,15 +74,15 @@ class TaskMenu extends HTMLElement {
     this.populateMenu();
     shadowRoot.appendChild(taskMenuTemplate.content.cloneNode(true));
     this.shadowRoot.querySelectorAll("a").forEach((a) => {
-      a.addEventListener("click", this._addEvents.bind(this, a));
+      a.addEventListener("click", this._addCloseBtn.bind(this, a));
     });
   }
-  _addEvents(a, event) {
-    this.testMethod(a.id);
-    this.setAttribute("visibility", false);
+  _addCloseBtn(a, event) {
+    this.setTaskViewer(a.id);
     this.hidden = true;
     const btn = document.createElement("button");
     btn.id = "close-btn";
+    btn.style.height= "35px";
     btn.addEventListener("click", this.closeTaskView.bind(this));
     btn.innerText = "Back to the menu";
     document.getElementsByTagName("header")[0].appendChild(btn);
@@ -103,13 +106,12 @@ class TaskMenu extends HTMLElement {
     div.appendChild(nav);
     taskMenuTemplate.innerHTML += div.innerHTML;
   }
-  testMethod(id) {
+  setTaskViewer(id) {
     const taskViewer = document.getElementsByTagName("task-viewer")[0];
     taskViewer.setAttribute("task", id);
     taskViewer.style.display = 'grid';
   }
   closeTaskView(event) {
-    this.setAttribute("visibility", true);
     this.hidden = false;
     document.getElementsByTagName("task-viewer")[0].style.display = 'none';
     document.getElementById("close-btn").remove();

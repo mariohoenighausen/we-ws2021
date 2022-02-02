@@ -28,7 +28,7 @@
                 </div>
                 <button type="submit" class="login-btn">Login</button>
             </form>
-            <a href="register.php">Register</a>
+            <a href="./register.php">Register</a>
         </div>
         
     </main>

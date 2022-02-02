@@ -57,7 +57,7 @@ taskViewerTemplate.innerHTML = `
     }
     .render-vs-code > iframe{
         width:100%;
-        height:750px;
+        height:500px;
     }
 } 
 
@@ -69,7 +69,7 @@ taskViewerTemplate.innerHTML = `
     }
     .render-vs-code > iframe{
         width:100%;
-        height:750px   
+        height:500px   
     }
 }
 .fade-in{

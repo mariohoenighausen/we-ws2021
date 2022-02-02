@@ -1,149 +1,163 @@
 <!DOCTYPE html>
-<html class=" hhnxgjv idc0_332"><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<html class=" hhnxgjv idc0_332">
 
-<style>
-* {
-  box-sizing: border-box;
-}
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252">
 
-body {
-  font-family: Helvetica;
-  background-color: #b2d6d1;
-}
+	<style>
+		* {
+			box-sizing: border-box;
+		}
 
-input[type=text], input[type=number], textarea {
-  width: 75%;
-  padding: 6px;
-  border: 1px solid #ccc;
-}
+		body {
+			font-family: Helvetica;
+			background-color: #b2d6d1;
+		}
 
-select {
-	width: 40%;
-  	padding: 6px;
-  	border: 1px solid #ccc;
-    background-color: #e0e0d1;
-}
+		input[type=text],
+		input[type=number],
+		textarea {
+			width: 75%;
+			padding: 6px;
+			border: 1px solid #ccc;
+		}
 
-label {
-	padding: 6px 12px 24px 0;
-    text-align: right;
-}
+		select {
+			width: 40%;
+			padding: 6px;
+			border: 1px solid #ccc;
+			background-color: #e0e0d1;
+		}
 
-.container {
-  padding: 16px;
-  background-color: #ebebe0;
-}
+		label {
+			padding: 6px 12px 24px 0;
+			text-align: right;
+		}
 
-.col-25 {
-  text-align: right;
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-}
+		.container {
+			padding: 16px;
+			background-color: #ebebe0;
+		}
 
-.col-75 {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
+		.col-25 {
+			text-align: right;
+			float: left;
+			width: 50%;
+			margin-top: 6px;
+		}
+
+		.col-75 {
+			float: left;
+			width: 50%;
+			margin-top: 6px;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	</style>
 </head>
+
 <body class="vsc-initialized">
-<h1 align="center">Survey Form</h1>
-<div class="container">
-	<form>
-    	<p style="text-align: center">Let us know how we can improve freeCodeCamp.</p>
-    <p></p><div class="row">	
-    	<div class="col-25">
-    		<label for="Name">* Name:</label>
-		</div>
-    	<div class="col-75">
-    		<input id="Name" type="text" placeholder="Enter your name" required="">
-		</div>
+	<h1 align="center">Survey Form</h1>
+	<div class="container">
+		<form>
+			<p style="text-align: center">Let us know how we can improve freeCodeCamp.</p>
+			<p></p>
+			<div class="row">
+				<div class="col-25">
+					<label for="Name">* Name:</label>
+				</div>
+				<div class="col-75">
+					<input id="Name" type="text" placeholder="Enter your name" required="">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="Email">* Email:</label>
+				</div>
+				<div class="col-75">
+					<input id="Email" type="text" placeholder="Enter your Email" required="">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label for="Age">* Age:</label>
+				</div>
+				<div class="col-75">
+					<input id="Age" type="number" placeholder="Age" required="">
+				</div>
+			</div>
+			<p></p>
+			<p></p>
+			<div class="row">
+				<div class="col-25">
+					<label for="role">Which option best describes your current role? </label>
+				</div>
+				<div class="col-75">
+					<select id="role" name="role">
+						<option value="student" selected="selected">Student</option>
+						<option value="schueler">Schüler</option>
+						<option value="dozent">Dozent</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+			</div>
+			<p></p>
+			<p></p>
+			<div class="row">
+				<div class="col-25">
+					<label for="likely">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+				</div>
+				<div class="col-75">
+					<div>
+						<input id="a1" type="radio" name="group-a">
+						<label for="b1">Definitely</label><br>
+						<input type="radio" id="a2" name="group-a">
+						<label for="b2">Maybe</label><br>
+						<input type="radio" id="a3" name="group-a">
+						<label for="b3">Not sure</label>
+					</div>
+				</div>
+			</div>
+			<p></p>
+			<p></p>
+			<div class="row">
+				<div class="col-25">
+					<label for="role">What do you like most in FCC:</label>
+				</div>
+				<div class="col-75">
+					<select id="role" name="role">
+						<option value="" disabled="disabled" selected="selected">Select an option</option>
+						<option value="free">That it's free</option>
+						<option value="code">That it's about code</option>
+						<option value="camp">That you can live in our alternative camp</option>
+					</select>
+				</div>
+			</div>
+			<p></p>
+			<p></p>
+			<div class="row">
+				<div class="col-25">
+					<label for="likely">Things that should be improved in the future<br>
+						(Check all that apply):</label>
+				</div>
+				<div class="col-75">
+					<div>
+						<input id="b1" type="checkbox" name="group-b">
+						<label for="b1">Front-end Projects</label><br>
+						<input type="checkbox" id="b2" name="group-b">
+						<label for="b2">Back-end Projects</label><br>
+						<input type="checkbox" id="b3" name="group-b">
+						<label for="b3">Data Visualization</label>
+					</div>
+				</div>
+			</div>
+			<p></p>
+		</form>
 	</div>
-    <div class="row">
-		<div class="col-25">
-    		<label for="Email">* Email:</label>
-		</div>
-    	<div class="col-75">
-    		<input id="Email" type="text" placeholder="Enter your Email" required="">
-		</div>
-	</div>
-    <div class="row">
-    	<div class="col-25">
-    		<label for="Age">* Age:</label>
-		</div>
-    	<div class="col-75">
-    		<input id="Age" type="number" placeholder="Age" required="">
-		</div>
-    </div><p></p>
-    <p></p><div class="row">
-    	<div class="col-25">
-      		<label for="role">Which option best describes your current role?				</label>
-    	</div>
-    	<div class="col-75">
-      		<select id="role" name="role">
-        	<option value="student" selected="selected">Student</option>
-        	<option value="schueler">Schüler</option>
-        	<option value="dozent">Dozent</option>
-            <option value="other">Other</option>
-      		</select>
-    	</div>
-	</div><p></p>
-    <p></p><div class="row">
-    	<div class="col-25">
-    		<label for="likely">* How likely is that you would recommend freeCodeCamp to a friend?</label>
-		</div>
-    	<div class="col-75">
-            <div>
-      		<input id="a1" type="radio" name="group-a">
-      		<label for="b1">Definitely</label><br>
-      		<input type="radio" id="a2" name="group-a">
-      		<label for="b2">Maybe</label><br>
-    		<input type="radio" id="a3" name="group-a">
-   		  	<label for="b3">Not sure</label>
-   		 </div>
-		</div>
-    </div><p></p>
-    <p></p><div class="row">
-    	<div class="col-25">
-      		<label for="role">What do you like most in FCC:</label>
-    	</div>
-    	<div class="col-75">
-      		<select id="role" name="role">
-        	<option value="" disabled="disabled" selected="selected">Select an option</option>
-        	<option value="free">That it's free</option>
-        	<option value="code">That it's about code</option>
-            <option value="camp">That you can live in our alternative camp</option>
-      		</select>
-    	</div>
-	</div><p></p>
-    <p></p><div class="row">
-    	<div class="col-25">
-    		<label for="likely">Things that should be improved in the future<br>
-            (Check all that apply):</label>
-		</div>
-    	<div class="col-75">
-            <div>
-      		<input id="b1" type="checkbox" name="group-b">
-      		<label for="b1">Front-end Projects</label><br>
-      		<input type="checkbox" id="b2" name="group-b">
-      		<label for="b2">Back-end Projects</label><br>
-    		<input type="checkbox" id="b3" name="group-b">
-   		  	<label for="b3">Data Visualization</label>
-   		 </div>
-		</div>
-    </div><p></p>
-  </form></div>
+</body>
 
-
-
-
-
-</body></html>
+</html>

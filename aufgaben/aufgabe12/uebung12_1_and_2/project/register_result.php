@@ -18,8 +18,8 @@
            <p> Your registration was successfull! <p>
         </div>
         <div>
-            <a href="register.php">Back to registration</a>
-            <a href="login.php">Login</a>
+            <a href="./register.php">Back to registration</a>
+            <a href="./login.php">Login</a>
         </div>
     </main>
     <footer>

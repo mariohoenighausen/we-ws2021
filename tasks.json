@@ -164,7 +164,7 @@
           {
             "q": "Wie ist eine HTML-Tabelle aufgebaut?",
             "submitted": {
-              "a": "Eine HTML-Tabelle besteht aus den Tags <table> (definiert die Nutzung eines Tables), <tr> (definiert die Tabellen Zeile), <th> (definiert Kopfspalten) und <td> (definiert table data bzw. Spalten und Spaltenwerte).",
+              "a": "Eine HTML-Tabelle besteht aus den Tags <\n table > (definiert die Nutzung eines Tables), < tr > (definiert die Tabellen Zeile), < th > (definiert Kopfspalten) und < td > (definiert table data bzw. Spalten und Spaltenwerte).",
               "code": ""
             },
             "improved": {
@@ -265,7 +265,7 @@
               {
                 "q": "Berechnen Sie die Spezifität folgender CSS-Selektoren: \n 1. div div div:focus  .inner \n 2. h1 + div.main \n 3. div a:link[href*='h-brs'] \n 4. nav > a:hover::before \n 5. ul#primary-nav li.active",
                 "submitted": {
-                  "a": "div div div:focus .inner = 023 \n h1 + div.main = 012 \n div a:link[href*='h-brs'] = 022 \n nav > a:hover::before = 013 \n ul#primary-nav li.active = 112",
+                  "a": "div div div:focus .inner = 023 || h1 + div.main = 012 || div a:link[href*='h-brs'] = 022 || nav > a:hover::before = 013 || ul#primary-nav li.active = 112",
                   "code": ""
                 },
                 "improved": {
@@ -276,7 +276,7 @@
               {
                 "q": "Rechnen Sie folgende RGB-Werte in HSL-Werte um: \n 1. #ffffff \n 2. #000 \n 3. #ab0978 \n 4. rgb(127,255,33) \n 5. rgba(255,127,33,0.8)",
                 "submitted": {
-                  "a": "#ffffff => 255 255 255 RGB => 0° 0.0% 100% HSL \n #000 = > 0 0 0 RGB => 0° 0.0% 0.0% \n #ab0978 => 171 9 120 RGB => 319° 90% 35.3% HSL \n rgb(127,255,33) => #7FFF21 HEX =>95° 100.0% 56% HSL \n rgba(255,127,33,0.8) => #ff7e20 HEX => rgb(255 126 32) =>25° 100.0% 56%  0.8 HSL",
+                  "a": "#ffffff => 255 255 255 RGB => 0° 0.0% 100% HSL || #000 = > 0 0 0 RGB => 0° 0.0% 0.0% || #ab0978 => 171 9 120 RGB => 319° 90% 35.3% HSL || rgb(127,255,33) => #7FFF21 HEX =>95° 100.0% 56% HSL || rgba(255,127,33,0.8) => #ff7e20 HEX => rgb(255 126 32) =>25° 100.0% 56%  0.8 HSL",
                   "code": ""
                 },
                 "improved": {
@@ -1474,7 +1474,7 @@
                   "a":"",
                   "nocodevis":true,
                   "nocoderender":false,
-                  "code":"./aufgaben/aufgabe13/uebung13_4_1.html"
+                  "code":"./aufgaben/aufgabe13/aufgabe13_4_1.html"
                 },
                 "improved": {
                     "a": "",

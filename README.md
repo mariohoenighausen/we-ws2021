@@ -88,6 +88,8 @@ Everything until now has been written in HTML5, CSS3 and JavaScript with additio
 
 [Top Sort Algorithm](https://adelachao.medium.com/graph-topological-sort-kahns-algorithm-93380b00e7d7)
 
+[Web Goat](https://github.com/vernjan/webgoat/blob/master/09-2018-csrf.md)
+
 ## Authors
 ***
 Mario Hönighausen

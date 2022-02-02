@@ -33,7 +33,7 @@ This web project was created by
 as part of the Introduction to web engineering course
 by [Prof. Dr. Manfred Kaul](https://kaul.inf.h-brs.de) in Semester 5 at university for applied sciences [Bonn-Rhein-Sieg](https://www.h-brs.de/de)
 
-Everything until now has been written with HTML5, CSS3 and JavaScript with additional use of web components to display the tasks submitted in the turn of the semester.
+Everything until now has been written in HTML5, CSS3 and JavaScript with additional use of web components to display the tasks submitted in the turn of the semester.
 
 ### Screenhots
 #### index html
